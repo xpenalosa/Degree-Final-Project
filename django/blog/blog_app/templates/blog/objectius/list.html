@@ -1,0 +1,9 @@
+<ul>
+  {% for obj in objectives %}
+    <ul>
+        <a href="{{ obj.get_absolute_url }}">{{ obj.description }}</a> - {{ obj.get_priority }}
+    </ul>
+  {% empty %}
+    <p>No hi ha objectius incomplerts per mostrar.</p>
+  {% endfor %}
+</ul>

@@ -1,0 +1,1 @@
+cd zookeeper && java -cp zookeeper-3.4.12.jar:lib/slf4j-api-1.7.25.jar:lib/slf4j-log4j12-1.7.25.jar:lib/log4j-1.2.17.jar:lib:conf org.apache.zookeeper.server.quorum.QuorumPeerMain /home/pi/tfg/zookeeper/conf/zoo.cfg

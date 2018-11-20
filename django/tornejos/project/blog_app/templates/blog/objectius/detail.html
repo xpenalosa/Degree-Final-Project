@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+
+{% block title %}Objective view{% endblock %}
+
+{% block content %}
+
+  <h1>
+    {{ objective.description }}
+    {% if objective.completed %}
+      - Completat
+    {% endif %}
+  </h1>
+
+  <p>{{ objective.body|markdown }}</p>
+
+  <hr>
+
+  <p>
+    <b>Prioritat:</b> {{ objective.get_priority }} </br>
+    <b>Hores estimades:</b> {{ objective.time_estimated }}h </br>
+    <b>Hores dedicades:</b> {{ objective.time_completed }}h
+  </p>
+
+  <hr>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gestor de Tornejos</title>
+    <link href="{% static "css/index.css" %}" rel="stylesheet">
+  </head>
+  <body>
+    <div id="content">
+      <div class="row">
+        <div class="column left">
+          <h1 class="header">Visita l'API</h1>
+          <a href="/api" class="button">API</a>
+        </div>
+        <div class="column middle">
+          <h1 class="header">Gestiona tornejos</h1>
+          <a href="/" class="button">Accedeix</a>
+        </div>
+        <div class="column right">
+          <h1 class="header">Accedeix al blog</h1>
+          <a href="/blog" class="button">Blog</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

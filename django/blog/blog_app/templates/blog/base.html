@@ -1,0 +1,21 @@
+{% load staticfiles %}
+{% load blog_tags %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static "css/blog.css" %}" rel="stylesheet">
+  </head>
+  <body>
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div id="sidebar">
+      <h2>Treball de Final de Grau</h2>
+      <h3><a href='/blog'>Registre d'activitat</a></h3>
+      <h3><a href='/blog/objectius'>Objectius</a></h3>
+      {% show_objectives %}
+    </div>
+  </body>
+</html>

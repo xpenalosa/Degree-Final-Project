@@ -1,0 +1,13 @@
+# [TEMP FILES]
+*.out
+
+# [COMPILED PYTHON]
+*.pyc
+__pycache__/
+
+# [DJANGO FILES]
+local_settings.py
+db.sqlite3
+
+# [APACHE ZOOKEEPER]
+zookeeper
