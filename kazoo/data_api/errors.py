@@ -1,5 +1,5 @@
 
-class ApiErrors():
+class DataApiErrors():
 
 	# ZOOKEEPER
 	ZOOKEEPER_ERROR = "Zookeeper could not process the data"

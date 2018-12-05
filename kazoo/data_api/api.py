@@ -11,7 +11,7 @@ from kazoo.exceptions import LockTimeout, NoNodeError
 from errors import DataApiErrors, DataApiException
 
 MATCH_STATUS = {
-	"UNPLAYED ": "U",
+	"UNPLAYED" : "U",
 	"P1_WON" : "1",
 	"P2_WON" : "2" }
 
@@ -53,13 +53,14 @@ class DataAPI():
 		On success returns the created tournament path.
 		"""
 		# Calculate deletion date and format to dd/mm/yyyy
-		deletion_time = datetime.now() + timedelta(days=30)
-		formatted_deletion_time = deletion_time.strftime("%d/%m/%Y")
+		deletion_date = datetime.now() + timedelta(days=30)
+		formatted_deletion_date = deletion_date.strftime("%d/%m/%Y")
 
 		# Calculate amount of matches
-		matches = p-1
+		matches = player_amount - 1
 		# Initialize the classification to Unplayed for every match
 		classification = MATCH_STATUS["UNPLAYED"] * matches
+		
 		# Concatenate the data into a dictionary
 		tournament_dict = {
 			'name' : name,
@@ -114,8 +115,8 @@ class DataAPI():
 		return 0
 
 
-	def create_tournament(self, name=None, modality=0, players=None,
-			password=None):
+	def create_tournament(self, name=None, modality=0, password=None,
+			players=None):
 		"""Create a new tournament with the players.
 		
 		The zNode will have multiple children, each corresponding to a
@@ -125,7 +126,7 @@ class DataAPI():
 		"""
 		# Add a tournament node
 		tournament_path = self.__create_tournament(
-			name, version, password, len(players))
+			name, modality, password, len(players))
 	
 		# Spawn a transaction to add all the players	
 		transaction = self.client.transaction()
@@ -213,7 +214,7 @@ class DataAPI():
 			# Get tournament data
 			t_data, t_stats = self.client.get(tournament_path)
 			# Unpack json
-			t_json = json.load(t_data)
+			t_json = json.loads(t_data)
 			# Get select fields
 			data['name'] = t_json['data']
 			data['classification'] = t_json['classification']
@@ -228,7 +229,7 @@ class DataAPI():
 				p_data, _ = self.client.get(tournament_path
 					+ "/" + p_id)
 				# Unpack json
-				p_json = json.load(p_data)
+				p_json = json.loads(p_data)
 				# Append to data dictionary
 				children_data.append(p_json)
 			data['players'] = players_data
@@ -269,7 +270,7 @@ class DataAPI():
 				raise DataApiException(
 					DataApiErrors.CLASSIFICATION_LENGTH)
 			# Verify password
-			t_json = json.load(t_data)
+			t_json = json.loads(t_data)
 			if t_json['password'] != password:
 				raise DataApiException(
 					DataApiErrors.PASSWORD_MISMATCH)

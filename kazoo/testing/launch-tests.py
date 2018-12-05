@@ -12,7 +12,7 @@ from test_znode_instancing import ZNodeInstancingTest
 from test_znode_data import ZNodeDataTest
 from test_connection import ConnectionTest
 from test_lock import LockTest
-
+from test_api import ApiTest
 
 def print_separator(text):
 	print("="*40)
@@ -116,8 +116,9 @@ def create_tests(client_1, client_2):
 	t1 = ZNodeInstancingTest(client_1)
 	t2 = ZNodeDataTest(client_1)
 	t3 = LockTest(client_1, client_2)
+	t4 = ApiTest(client_1, client_2)
 	
-	test_class_instances = [t1,t2,t3,]
+	test_class_instances = [t1,t2,t3,t4,]
 	return test_class_instances
 
 

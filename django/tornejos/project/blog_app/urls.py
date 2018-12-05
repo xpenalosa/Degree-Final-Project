@@ -6,7 +6,7 @@ app_name = 'blog'
 urlpatterns = [
     # post views
     url(r'^$', views.PostListView.as_view(), name='post_list'),
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/?', admin.site.urls),
     url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/'\
         r'(?P<post>[-\w]+)/$',
         views.post_detail,
