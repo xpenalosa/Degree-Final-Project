@@ -14,10 +14,10 @@ colorama_init(autoreset=True)
 class BaseTest():
 
 	@staticmethod
-	def print_fail(text, msg):
+	def print_fail(text, ex):
 	        print('\t{2}FAILED{3} {0}\n\t{2}{1}'.format(
 				text,
-				msg,
+				ex[1],
 				Fore.RED + Style.BRIGHT,
 				Style.RESET_ALL))
 
@@ -35,7 +35,8 @@ class BaseTest():
 			try:
 				func(self)
 			except:
-				BaseTest.print_fail(func.__name__, sys.exc_info())
+				BaseTest.print_fail(func.__name__,
+					sys.exc_info())
 				return False
 			else:
 				BaseTest.print_pass(func.__name__)

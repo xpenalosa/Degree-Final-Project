@@ -98,15 +98,15 @@ class DataApiListener():
 				password = data['password'],
 				players = data['players']
 			)
-		elif op == "delete":
-			result = self.__api.delete_tournament(
+		elif op == "update":
+			result = self.__api.update_tournament(
 				tournament_id = data['id'],
 				version = data['version'],
 				classification = data['classification'],
 				password = data['password']
 			)
-		elif op == "update":
-			result = self.__api.update_tournament(
+		elif op == "delete":
+			result = self.__api.delete_tournament(
 				tournament_id = data['id'],
 				password = data['password']
 			)

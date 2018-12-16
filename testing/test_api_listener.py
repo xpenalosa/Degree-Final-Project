@@ -1,12 +1,12 @@
 import sys
 import os
-import asyncio
 import json
 import re
 from multiprocessing.connection import Client
 
-from basetest import BaseTest
+from kazoo.exceptions import NoNodeError
 
+from basetest import BaseTest
 from data_api import DataApiListener
 
 
@@ -58,7 +58,7 @@ class ApiListenerTest(BaseTest):
 
 		assert answer is not None, "Returned answer is None."
 		assert type(answer) is dict, "Returned answer is not a dict."
-		assert answer['code'] == 0, "Code mismatch " + answer
+		assert answer['code'] == 0, "Code mismatch " + str(answer)
 
 		t_path = answer['data']
 		assert type(t_path) is str, " ".join([
@@ -143,23 +143,12 @@ class ApiListenerTest(BaseTest):
 
 		answer = api_client.recv()
 		api_client.close()
-
-		assert answer is not None, "Returned answer is None."
-		assert type(answer) is dict, "Returned answer is not a dict."
-		assert answer['code'] == 0, "Code mismatch " + answer
 		
 		t_path = answer['data']
-		assert type(t_path) is str, " ".join([
-			"Data type mismatch", answer])
-		t_path_rgx = re.compile("/([\d\w_]+/?)*")
-		assert t_path_rgx.match(t_path) is not None, " ".join([
-			"Data is not a path", t_path])
-
 
 		sent_data2 = dict()
 		sent_data2['operation'] = "get"
 		sent_data2['id'] = t_path.split('/')[-1].lstrip('t')
-
 
 		api_client2 = self.__create_api_client()
 		api_client2.send(sent_data2)
@@ -170,7 +159,7 @@ class ApiListenerTest(BaseTest):
 		
 		assert answer2 is not None, "Returned answer2 is None."
 		assert type(answer2) is dict, "Returned answer2 is not a dict."
-		assert answer2['code'] == 0, "Code2 mismatch " + answer2
+		assert answer2['code'] == 0, "Code2 mismatch " + str(answer2)
 
 		t_info = answer2['data']
 		assert t_info is not None, "Answer2 data is None"
@@ -232,6 +221,9 @@ class ApiListenerTest(BaseTest):
 		them by calling the API. It is verified that the nodes no
 		longer exist after the call.
 		"""
+
+		# ---------- CREATE ----------
+
 		num_children = 5
 
 		sent_data = dict()
@@ -249,21 +241,30 @@ class ApiListenerTest(BaseTest):
 		answer = api_client.recv()
 		api_client.close()
 
-		assert answer is not None, "Returned answer is None."
-		assert type(answer) is dict, "Returned answer is not a dict."
-		assert answer['code'] == 0, "Code mismatch" + answer['code']
-
 		t_path = answer['data']
-		assert type(t_path) is str, "Data type mismatch " + t_path
-		t_path_rgx = re.compile("/([\d\w_]+/?)*")
-		assert t_path_rgx.match(t_path) is not None, " ".join([
-			"Data is not a path", t_path])
-
-
 		t_id = t_path.split('/')[-1].lstrip('t')
-		sent_data2 = dict()
-		sent_data2['']
-		
+
+		# ---------- DELETE ----------
+
+		sent_data3 = dict()
+		sent_data3['operation'] = "delete"
+		sent_data3['id'] = t_id
+		sent_data3['password'] = sent_data['password']
+
+		api_client3 = self.__create_api_client()
+		api_client3.send(sent_data3)
+		if not(api_client3.poll(5)):
+			assert False, "No data returned on delete"
+		answer3 = api_client3.recv()
+		api_client3.close()
+
+		assert type(answer3) is dict, " ".join([
+			"Returned answer3 is not a dict", str(answer3)])
+		assert answer3['code'] == 0, "Code3 mismatch " + str(answer3)
+
+		del_data = answer3['data']
+		assert del_data == 0, "Data3 mismatch " + del_data
+
 		try:
 			data, stats = self.client.get(t_path)
 		except NoNodeError:
@@ -282,12 +283,13 @@ class ApiListenerTest(BaseTest):
 		verified that the classification has been updated by requesting
 		the tournament with another API call.
 		"""
-		return
+		# ---------- CREATE ----------
+
 		num_children = 5
 
 		sent_data = dict()
 		sent_data['operation'] = "create"
-		sent_data['name'] = "Test tournament listener"
+		sent_data['name'] = "Test tournament listener 3"
 		sent_data['modality'] = 0
 		sent_data['password'] = "test"
 		sent_data['players'] = [str(n) for n in range(num_children)]
@@ -300,40 +302,52 @@ class ApiListenerTest(BaseTest):
 		answer = api_client.recv()
 		api_client.close()
 
-		assert answer is not None, "Returned answer is None."
-		assert type(answer) is dict, "Returned answer is not a dict."
-		return
-		self.client.ensure_path(self.testpath)
+		t_path = answer['data']
 
-		t_name = "Tournament test 4"
-		t_modality = 0 # Irrelevant as of now
-		t_password = "test"
+		# ---------- GET ----------
 
-		num_players = 5
-		players = [str(n) for n in range(num_players)]
-		
-		# Create tournament
-		t_path = self.api.create_tournament(t_name, t_modality,
-			t_password, players)
-		# Get tournament id from path
 		t_id = t_path.split('/')[-1].lstrip('t')
 
-		t_out = self.api.get_tournament(t_id)
-		
-		new_classif = t_out['classification']
-		new_classif = self.api.MATCH_STATUS["P1_WON"] + new_classif[1:]
-		result = self.api.update_tournament(t_id, t_out['version'],
-			new_classif, t_password)
-		assert result == True, "Wrong return value " + result
+		sent_data2 = dict()
+		sent_data2['operation'] = "get"
+		sent_data2['id'] = t_id
 
-		t2_out = self.api.get_tournament(t_id)
-		assert t_out['name'] == t2_out['name'], " ".join([
-			"Name mismatch:", t_out['name'], "!=", t2_out['name']])	
-		assert t_out['version'] != t2_out['version'], " ".join([
-			"Same version:", t_out['version']])
-		assert t2_out['classification'] == new_classif, " ".join([
-			"Classification mismatch:", t_out['classification'],
-			"!=", new_classif])
+		api_client2 = self.__create_api_client()
+		api_client2.send(sent_data2)
+		if not api_client2.poll(5):
+			assert False, "No data returned on get"
+		answer2 = api_client2.recv()
+		api_client2.close()
+
+		t_info = answer2['data']
+
+		# ---------- UPDATE ----------
+
+		new_classif = t_info['classification']
+		new_classif = "1" + new_classif[1:]
+
+		sent_data3 = dict()
+		sent_data3['operation'] = "update"
+		sent_data3['id'] = t_id
+		sent_data3['version'] = t_info['version']
+		sent_data3['classification'] = new_classif
+		sent_data3['password'] = sent_data['password']
+
+		api_client3 = self.__create_api_client()
+		api_client3.send(sent_data3)
+		if not api_client3.poll(5):
+			assert False, ""
+		answer3 = api_client3.recv()
+		api_client3.close()
+	
+		assert type(answer3) is dict, " ".join([
+			"Returned answer3 is not a dict", str(answer3)])
+		assert answer3['code'] == 0, "Code3 mismatch " + str(answer3)
+
+		t_out = answer3['data']
+		assert type(t_out) is bool, "Data3 is not a bool." + str(t_out)
+		assert t_out, "Data3 is False"
+
 		# TODO: Test players when api is updated
 		
 		
@@ -348,12 +362,12 @@ class ApiListenerTest(BaseTest):
 		and matches the information returned in the API call with the
 		information in each tournament.
 		"""
-		return
+		# ---------- CREATE ----------
 		num_children = 5
 
 		sent_data = dict()
 		sent_data['operation'] = "create"
-		sent_data['name'] = "Test tournament listener"
+		sent_data['name'] = "Test tournament listener 4"
 		sent_data['modality'] = 0
 		sent_data['password'] = "test"
 		sent_data['players'] = [str(n) for n in range(num_children)]
@@ -368,46 +382,75 @@ class ApiListenerTest(BaseTest):
 
 		assert answer is not None, "Returned answer is None."
 		assert type(answer) is dict, "Returned answer is not a dict."
-		return
-		self.client.ensure_path(self.testpath)
-
-		t_name = "Tournament test 5"
-		t_modality = 0 # Irrelevant as of now
-		t_password = "test"
-
-		num_players = 5
-		players = [str(n) for n in range(num_players)]
-		
-		# Create tournament
-		t_path = self.api.create_tournament(t_name, t_modality,
-			t_password, players)
-		# Get tournament id from path
+		t_path = answer['data']
 		t_id = t_path.split('/')[-1].lstrip('t')
 
-		t_info_array = self.api.get_tournament_list()
-		assert len(t_info_array) > 0, "No tournaments were returned"
+		# ---------- GET LIST ----------
+
+		sent_data2 = dict()
+		sent_data2['operation'] = "get_list"
 		
-		index = 0
-		for t_info in t_info_array:
-			t_info_id = t_info['id']
-			assert t_info_id is not None, " ".join([
-				"Tournament", index, "id is None"])
+		api_client2 = self.__create_api_client()
+		api_client2.send(sent_data2)
+		if not api_client2.poll(5):
+			assert False, "No data returned."
+
+		answer2 = api_client2.recv()
+		api_client2.close()
+
+		assert answer2 is not None, "Returned answer2 is None."
+		assert type(answer2) is dict, "Returned answer2 is not a dict."
+		assert answer2['code'] == 0, "Code2 mismatch: " + str(answer2)
+
+		t_infos = answer2['data']
+		assert type(t_infos) is list, " ".join([
+			"Data2 is not a list", str(t_infos)])
+		assert len(t_infos) > 0, "Data2 is a list of length 0."
+
+		# Verify the created tournament is in the list
+		for t_info in t_infos:
+			assert type(t_info) is dict, " ".join([
+				"Tournament info is not a dict:",
+				str(t_info)])
+			t_name = t_info['name']
+			assert t_name is not None, " ".join([
+				"Name is None:", str(t_info)])
+
+			# Check against original name
+			if t_name != sent_data['name']:
+				continue
+
+			# Check player count
+			t_players = t_info['players']
+			assert t_players is not None, " ".join([
+				"Player count is None",
+				str(t_info)])
+			assert t_players == num_children, " ".join([
+				"Player count mismatch:",
+				str(t_players),
+				"/",
+				str(num_children)])
+
+			# Check tournament id matches the path created
+			t_id_out = t_info['id']
+			assert t_id_out is not None, " ".join([
+				"Tournament id is None",
+				str(t_info)])
+			assert t_id_out == t_id, " ".join([
+				"Tournament id mismatch",
+				str(t_id_out),
+				"/",
+				str(t_id)])
+
+			# Skip checks on other tournaments
+			break
+
+
+		
+		
+
+
+
+
+
 	
-			t_info_t = self.api.get_tournament(t_info_id)
-
-			t_info_name = t_info['name']
-			assert t_info_name is not None, " ".join([
-				"Tournament", index, "name is None"])
-			assert t_info_name == t_info_t['name'], " ".join([
-				"Tournament", index, "name mismatch",
-				t_info_name, "!=", t_info_t['name']])
-
-			t_info_pc = t_info['players']
-			assert t_info_pc is not None, " ".join([
-				"Tournament", index, "player count is None"])
-			assert t_info_pc == len(t_info_t['players']), " ".join([
-				"Tournament", index, "player count mismatch:",
-				str(t_info_pc), "!=",
-				str(len(t_info_t['players']))])
-
-			index += 1
