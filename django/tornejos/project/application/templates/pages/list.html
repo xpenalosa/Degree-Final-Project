@@ -1,0 +1,50 @@
+{% extends "base_template.html" %}
+
+{% load static %}
+
+
+{% block title %}Llistat{% endblock title %}
+
+
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/list.css' %}">
+{% endblock css %}
+
+
+{% block js %}
+  <script src="{% static 'js/list.js' %}"></script>
+{% endblock js %}
+
+
+{% block content %}
+  <div id='content'>
+
+    {% if code != 0 %}
+      <div id='error'>
+	<h1>El servidor ha retornat el seg&uuml;ent error</h1>
+        <p>{{ data }}</p>
+      </div>
+    {% elif data %}
+      <div id='header'>
+        <h1>Llistat de tornejos creats</h1>
+        <input type="text" id="searchBar" onkeyup="updateSearch()" placeholder="Buscar..." size="32">
+      </div>
+
+      <ul id='list'>
+        {% for tournament in data %}
+          <li id='tournament'>
+            <div id='main-info'>
+              <p class='name'>{{ tournament.name|title }}</p>
+              <button type="button" onclick="location.href='/t/{{ tournament.id }}'">ACCEDIR</button>
+            </div>
+            <p class='players'>{{ tournament.players }} participants</p>
+          </li>
+        {% endfor %}
+      </ul>
+
+    {% else %}
+      <p class="info">No s'ha trobat cap torneig. Voleu <a href="/create">crear-ne</a> un?</p>
+    {% endif %}
+
+  </div>
+{% endblock content %}

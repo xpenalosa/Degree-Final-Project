@@ -1,92 +1,94 @@
 html {
-    min-height: 100%;
-    position: relative;
+	min-height: 100%;
+	overflow-x: hidden;
 }
 
 body {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+	margin: 0;
+	background-color: #3b3b3b;
+	text-align: center;
 }
 
+button[type=button]{
+	cursor: pointer;
+}
 
 .content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    height: 100vh;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+	margin-left: 0;
+	margin-right: 0;
 }
 
-.column {
-    position: relative;
-    float: left;
-    text-align: center;
-
-    height: 100vh;
-    width: 30%;
-
-    opacity: 0.7;
-    transition: opacity 0.5s;
-    color: white;
-    font-family: sans-serif;
-
-    background-color: black;
-    background-repeat: no-repeat;
+.title {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: x-large;
+	color: lightgray;
 }
 
-.column:hover{
-    opacity: 1.0;
+.row {
+	max-height: 300px;
+	width: 100%;
+	left: 0;
+	right: 0;
+
+	background-color: #014200;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 0px;
+	margin-left: 0;
+	margin-right: 0;
+	font-family: sans-serif;
+
 }
 
-.column.left {
-    background: url('/static/images/api_bg.png');
-    background-size: 125vh 100vh;
-    background-position: 50% 0;
+.row h1 {
+	margin: 0;
+	margin-top: 20px;
+
 }
 
-.column.right {
-    background: url('https://c.pxhere.com/images/7d/21/ed588c6f9dd84ff1cf8f96100885-1450843.jpg!d');
-    background-size: 125vh 100vh;
-    background-position: 80% 0;
+.row p {
+	padding-top: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	min-width: 40%;
+	max-width: 50%;
+	text-align: justify;
+	margin: 0 auto;
 }
 
-.column.middle {
-    background: url('/static/images/tournament_bg.png');
-    background-size: 100vh 100vh;
-    background-position: 50% 0;
-    width: 40%;
+.row.even {
+	background-color: #3b3b3b;
+	color: darkgray;
 }
 
-.header {
-    position: relative;
-    top: 20%;
-    font-family: sans-serif;
-    font-size: 46px;
-    opacity: 1.0;
+.row.odd {
+	background-color: lightgray;
+	color: #3b3b3b;
 }
 
-.button {
-    display: inline-block;
-    position: relative;
 
-    bottom: -60vh;
-    width: 40%;
+.row button {
+	width: 20%;
+	height: 20%;
 
-    color: #000000;
-    padding: 31px 64px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    opacity: 1.0;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 60%;
+	margin-right: 20%;
+
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+
+	border: 1px solid #017000;
+	color: lightgray;
+
+	background-color: #017000;
 }
-
-.button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-

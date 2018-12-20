@@ -1,0 +1,25 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+
+{% block title %}Crear{% endblock title %}
+
+
+{% block css %}
+  <p></p>
+{% endblock css %}
+
+
+{% block js %}
+  <script src="{% static "js/create.js"%}"></script>
+{% endblock js %}
+
+
+{% block content %}
+  <div id='content'>
+    <form method="post" action="/create" onsubmit="return validate_form()">
+      {{ form }}
+      <input type="submit">
+    </form>
+  </div>
+{% endblock content %}

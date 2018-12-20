@@ -25,7 +25,8 @@ SECRET_KEY = '=n5(s8(4!!y59loo!3ucc8-#hrhn_e2)#_*eo2(77rcowhr*89'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '192.168.1.*', u'localhost', '*' ]
+ALLOWED_HOSTS = [ '192.168.1.*', 'localhost', '161.166.96.162' ]
+#ALLOWED_HOSTS = [ '192.168.1.*', u'localhost', '*' ]
 
 
 # Application definition
@@ -78,6 +79,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'tornejos_cache_table',
     }
 }
 
