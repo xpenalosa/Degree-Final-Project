@@ -11,6 +11,9 @@ class DataApiErrors():
 	CLASSIFICATION_VALUE = "Invalid character in classification string"
 	CLASSIFICATION_LENGTH = "Invalid length for classification string"
 
+	# NODES
+	EMPTY_NODE = "No data was found in the node"
+
 	# SECURITY
 	PASSWORD_MISMATCH = "Password does not match"
 	VERSION_MISMATCH = "Version of the data does not match"

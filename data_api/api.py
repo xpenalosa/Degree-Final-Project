@@ -25,6 +25,7 @@ class DataAPI():
 	def __init__(self, client):
 		self.client = client
 		self.path = "/tornejos"
+		self.client.ensure_path(self.path)
 	
 
 	def __get_tournament_path(self, tournament_id):
@@ -182,8 +183,7 @@ class DataAPI():
 					DataApiErrors.PASSWORD_MISMATCH)
 			else:
 				# Delete node
-				self.client.delete(tournament_path,
-					recursive=True)
+				self.__delete_tournament(tournament_path)
 		except LockTimeout as e:
 			raise DataApiException(DataApiErrors.LOCK_TIMEOUT)
 		finally:
@@ -221,6 +221,8 @@ class DataAPI():
 			lock.acquire(timeout=0.5)
 			# Get tournament data
 			t_data, t_stats = self.client.get(tournament_path)
+			if not t_data:
+				raise DataApiException(DataApiErrors.EMPTY_NODE)
 			# Unpack json
 			t_json = json.loads(t_data.decode())
 			# Get select fields
@@ -274,6 +276,8 @@ class DataAPI():
 			lock.acquire(timeout=0.5)
 			# Get tournament data
 			t_data, t_stats = self.client.get(tournament_path)
+			if not t_data:
+				raise DataApiException(DataApiErrors.EMPTY_NODE)
 			# Verify node version
 			if t_stats.version != version:
 				raise DataApiException(
@@ -323,11 +327,12 @@ class DataAPI():
 		for t_id in tournament_ids:
 			t_data, t_stats = self.client.get("/".join([
 				self.path, t_id]))
+			if not t_data:
+				continue
 			t_json = json.loads(t_data.decode())
-
 			t_info = dict()
 			t_info['name'] = t_json['name']
-			t_info['id'] = t_id.lstrip('/').lstrip('t')
+			t_info['id'] = str(int(t_id.lstrip('/').lstrip('t')))
 			t_info['players'] = t_stats.children_count
 
 			data.append(t_info)

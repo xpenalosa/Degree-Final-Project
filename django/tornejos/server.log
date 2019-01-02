@@ -1,0 +1,293 @@
+nohup: ignoring input
+[02/Jan/2019 14:27:23] "GET /create HTTP/1.1" 200 2136
+[02/Jan/2019 14:27:39] "GET /create HTTP/1.1" 200 2136
+[2019-01-02 14:30:40,874 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=16 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6643660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 02, 2019 - 14:17:28
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-02 14:31:33,518 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=17 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb660b660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 02, 2019 - 14:30:58
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Jan/2019 14:32:15] "GET /create HTTP/1.1" 200 2136
+[02/Jan/2019 14:32:18] "GET /create HTTP/1.1" 200 2136
+[02/Jan/2019 14:32:18] "GET /static/js/create.js HTTP/1.1" 200 1422
+[02/Jan/2019 14:32:18] "GET /static/css/create.css HTTP/1.1" 200 835
+[02/Jan/2019 14:32:18] "GET /static/css/general.css HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+[02/Jan/2019 14:32:18] "GET /favicon.ico HTTP/1.1" 404 3047
+[2019-01-02 14:32:21,571 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1136 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66b9660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 02, 2019 - 14:31:52
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Jan/2019 14:32:39] "GET /list HTTP/1.1" 200 1012
+[02/Jan/2019 14:32:39] "GET /list HTTP/1.1" 200 1012
+[02/Jan/2019 14:32:40] "GET /static/css/error.css HTTP/1.1" 404 1663
+[02/Jan/2019 14:32:50] "GET / HTTP/1.1" 200 1838
+[02/Jan/2019 14:32:51] "GET /list HTTP/1.1" 200 1012
+[02/Jan/2019 14:32:52] "GET /static/css/error.css HTTP/1.1" 404 1663
+[02/Jan/2019 14:35:17] "GET / HTTP/1.1" 200 1838
+[02/Jan/2019 14:35:19] "GET /list HTTP/1.1" 200 1108
+[02/Jan/2019 14:35:20] "GET /static/css/list.css HTTP/1.1" 304 0
+[02/Jan/2019 14:35:29] "GET /create HTTP/1.1" 200 2135
+[02/Jan/2019 14:36:34] "POST /create HTTP/1.1" 302 0
+[02/Jan/2019 14:36:35] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:36:46] "GET /list HTTP/1.1" 200 1524
+[02/Jan/2019 14:36:49] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:37:21] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:37:23] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:37:23] "GET /static/css/display.css HTTP/1.1" 200 684
+[02/Jan/2019 14:37:23] "GET /static/css/general.css HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+[02/Jan/2019 14:37:23] "GET /favicon.ico HTTP/1.1" 404 3047
+[02/Jan/2019 14:37:28] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:37:28] "GET /static/css/display.css HTTP/1.1" 200 684
+[02/Jan/2019 14:37:28] "GET /static/css/general.css HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+[02/Jan/2019 14:37:29] "GET /favicon.ico HTTP/1.1" 404 3047
+[02/Jan/2019 14:38:01] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:40:48] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:40:49] "GET /static/css/display.css HTTP/1.1" 200 900
+[02/Jan/2019 14:40:58] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:40:59] "GET /static/css/display.css HTTP/1.1" 200 900
+[02/Jan/2019 14:41:01] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:41:01] "GET /static/css/display.css HTTP/1.1" 200 900
+[02/Jan/2019 14:41:01] "GET /static/css/general.css HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+[02/Jan/2019 14:41:01] "GET /favicon.ico HTTP/1.1" 404 3047
+[02/Jan/2019 14:41:08] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:41:08] "GET /static/css/display.css HTTP/1.1" 200 899
+[02/Jan/2019 14:41:27] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:41:28] "GET /static/css/display.css HTTP/1.1" 200 897
+[02/Jan/2019 14:41:33] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:41:33] "GET /static/css/display.css HTTP/1.1" 200 897
+[02/Jan/2019 14:41:48] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:41:48] "GET /static/css/display.css HTTP/1.1" 200 913
+[02/Jan/2019 14:42:29] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:42:29] "GET /static/css/display.css HTTP/1.1" 200 898
+[02/Jan/2019 14:42:35] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:42:35] "GET /static/css/display.css HTTP/1.1" 200 898
+[02/Jan/2019 14:43:26] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:43:27] "GET /static/css/display.css HTTP/1.1" 200 926
+[02/Jan/2019 14:43:36] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:43:37] "GET /static/css/display.css HTTP/1.1" 200 945
+[02/Jan/2019 14:44:07] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:44:07] "GET /static/css/display.css HTTP/1.1" 200 944
+[02/Jan/2019 14:44:10] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:45:16] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:45:17] "GET /static/css/display.css HTTP/1.1" 200 997
+[02/Jan/2019 14:45:33] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:45:33] "GET /static/css/display.css HTTP/1.1" 200 997
+[02/Jan/2019 14:46:04] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:46:04] "GET /static/css/display.css HTTP/1.1" 200 1015
+[02/Jan/2019 14:46:26] "GET /static/css/display.css HTTP/1.1" 200 1015
+[02/Jan/2019 14:47:30] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:47:30] "GET /static/css/display.css HTTP/1.1" 200 997
+[02/Jan/2019 14:47:44] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:49:18] "GET /t/3/ HTTP/1.1" 200 2961
+[02/Jan/2019 14:49:18] "GET /static/css/display.css HTTP/1.1" 200 1019
+[02/Jan/2019 14:50:27] "GET /t/3/ HTTP/1.1" 200 3001
+[02/Jan/2019 14:50:27] "GET /static/css/display.css HTTP/1.1" 200 1016
+[02/Jan/2019 14:50:29] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:51:16] "GET /t/3/ HTTP/1.1" 200 3001
+[02/Jan/2019 14:51:17] "GET /static/css/display.css HTTP/1.1" 200 1040
+[02/Jan/2019 14:51:21] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:51:46] "GET /t/3/ HTTP/1.1" 200 3001
+[02/Jan/2019 14:51:46] "GET /static/css/display.css HTTP/1.1" 200 1098
+[02/Jan/2019 14:51:50] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:56:15] "GET /t/3/ HTTP/1.1" 200 3001
+[02/Jan/2019 14:56:15] "GET /static/css/display.css HTTP/1.1" 200 1118
+[02/Jan/2019 14:56:17] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:56:39] "GET /create HTTP/1.1" 200 2135
+[02/Jan/2019 14:56:58] "POST /create HTTP/1.1" 302 0
+[02/Jan/2019 14:56:59] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 14:56:59] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:57:04] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:58:30] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 14:58:30] "GET /static/css/display.css HTTP/1.1" 200 1153
+[02/Jan/2019 14:58:35] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 14:59:48] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 14:59:48] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 15:28:49] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 15:48:55] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 15:48:56] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 15:49:09] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 15:49:11] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 15:49:18] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 15:50:38] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 15:56:43] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 15:56:43] "GET /static/css/display.css HTTP/1.1" 200 1133
+[2019-01-02 15:58:13,834 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1137 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb666a660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 02, 2019 - 14:32:38
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Jan/2019 15:59:13] "GET /t/4/ HTTP/1.1" 200 3025
+[02/Jan/2019 15:59:13] "GET /static/css/display.css HTTP/1.1" 304 0
+[2019-01-02 16:10:19,766 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1137 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65d4660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 02, 2019 - 15:58:31
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Jan/2019 16:12:05] "GET /t/4/ HTTP/1.1" 200 3052
+[02/Jan/2019 16:12:06] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 16:13:25] "POST /t/4/delete HTTP/1.1" 302 0
+[02/Jan/2019 16:13:26] "GET /list HTTP/1.1" 200 1665
+[02/Jan/2019 16:13:26] "GET /static/css/list.css HTTP/1.1" 304 0
+[02/Jan/2019 16:13:29] "GET /t/3/ HTTP/1.1" 200 3028
+[2019-01-02 16:16:46,875 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1080 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65ef660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 02, 2019 - 16:10:37
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-02 17:26:36,218 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=192 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66ae660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 02, 2019 - 16:17:04
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Jan/2019 17:26:53] "GET / HTTP/1.1" 200 1838
+[02/Jan/2019 17:26:55] "GET /list HTTP/1.1" 200 1524
+[02/Jan/2019 17:26:56] "GET /static/css/list.css HTTP/1.1" 304 0
+[02/Jan/2019 17:26:57] "GET /create HTTP/1.1" 200 2135
+[02/Jan/2019 17:27:06] "POST /create HTTP/1.1" 302 0
+Internal Server Error: /t/5/
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 133, in display_tournament
+    return render(request, "pages/display.html", context)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 1471, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 951, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 951, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 67: 'endfor', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+[02/Jan/2019 17:27:10] "GET /t/5/ HTTP/1.1" 500 227034
+[02/Jan/2019 17:27:55] "GET /t/5/ HTTP/1.1" 200 3128
+[02/Jan/2019 17:27:55] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 17:31:51] "GET /create HTTP/1.1" 200 2135
+[02/Jan/2019 17:32:10] "POST /create HTTP/1.1" 302 0
+[02/Jan/2019 17:32:11] "GET /t/6/ HTTP/1.1" 200 7232
+[02/Jan/2019 17:32:41] "POST /t/6/delete HTTP/1.1" 302 0
+[02/Jan/2019 17:32:41] "GET /t/6/ HTTP/1.1" 200 1023
+[02/Jan/2019 17:32:41] "GET /static/css/error.css HTTP/1.1" 404 1663
+[02/Jan/2019 17:32:44] "GET /list HTTP/1.1" 200 1982
+[02/Jan/2019 17:32:57] "GET /t/5/ HTTP/1.1" 200 3128
+[02/Jan/2019 17:33:00] "POST /t/5/delete HTTP/1.1" 302 0
+[02/Jan/2019 17:33:00] "GET /list HTTP/1.1" 200 1665
+[02/Jan/2019 17:33:03] "GET /t/3/ HTTP/1.1" 200 3122
+[02/Jan/2019 17:33:07] "POST /t/3/delete HTTP/1.1" 302 0
+[02/Jan/2019 17:33:07] "GET /list HTTP/1.1" 200 1249
+[02/Jan/2019 17:33:08] "GET / HTTP/1.1" 200 1838
+[02/Jan/2019 17:40:55] "GET /list HTTP/1.1" 200 1108
+[02/Jan/2019 17:40:56] "GET /create HTTP/1.1" 200 2135
+[02/Jan/2019 17:41:06] "POST /create HTTP/1.1" 302 0
+[02/Jan/2019 17:41:07] "GET /t/8/ HTTP/1.1" 200 4492
+[02/Jan/2019 17:41:07] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 18:16:46] "GET /list HTTP/1.1" 200 1524
+[02/Jan/2019 18:16:47] "GET /static/css/list.css HTTP/1.1" 304 0
+[02/Jan/2019 18:16:48] "GET /t/8/ HTTP/1.1" 200 4501
+[02/Jan/2019 18:16:48] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 18:54:40] "GET /list HTTP/1.1" 200 1524
+[02/Jan/2019 18:54:40] "GET /static/css/list.css HTTP/1.1" 304 0
+[02/Jan/2019 18:54:42] "GET /t/8/ HTTP/1.1" 200 4489
+[02/Jan/2019 18:54:42] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 18:59:39] "GET /list HTTP/1.1" 200 1524
+[02/Jan/2019 18:59:41] "GET /t/8/ HTTP/1.1" 200 4531
+[02/Jan/2019 19:44:14] "GET /t/8/ HTTP/1.1" 200 4605
+[02/Jan/2019 19:44:14] "GET /static/css/display.css HTTP/1.1" 304 0
+[02/Jan/2019 19:59:18] "GET / HTTP/1.1" 200 1838
+[02/Jan/2019 19:59:19] "GET /list HTTP/1.1" 200 1012
+[02/Jan/2019 19:59:20] "GET /static/css/error.css HTTP/1.1" 404 1663
+[02/Jan/2019 19:59:21] "GET /list HTTP/1.1" 200 1012
+[02/Jan/2019 19:59:21] "GET /static/css/error.css HTTP/1.1" 404 1663
+[02/Jan/2019 19:59:22] "GET /create HTTP/1.1" 200 2135
+[02/Jan/2019 19:59:24] "GET /blog/ HTTP/1.1" 200 3857

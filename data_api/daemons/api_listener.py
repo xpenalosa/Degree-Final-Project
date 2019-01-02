@@ -28,9 +28,7 @@ class DataApiListener():
 		ApiListener instance.
 		"""
 		while self.__keep_running:
-			print("Listener - Now waiting for a connection")
 			new_c = self.listener.accept()
-			print("Listener - Got a connection")
 			# Check there is data to read
 			if not new_c.poll(0.2):
 				# Close after 0.2 seconds idle
@@ -57,7 +55,7 @@ class DataApiListener():
 		self.__keep_running = False	
 
 
-	def __parse_request(self, data):
+	def __parse_request(self, req):
 		"""Parse an incoming request.
 
 		Returns a dictionary containing the following items:
@@ -73,24 +71,24 @@ class DataApiListener():
 			result['data'] = "Server unavailable"
 			return result
 
-		if type(data) is not dict:
+		if type(req) is not dict:
 			result['code'] = -1
 			result['data'] = "Invalid data format"
 			return result
 
 		try:
-			result['data'] = self.__run_request(data)
+			result['data'] = self.__run_request(req)
 		except Exception as e:
 			result['code'] = -3
-			result['data'] = e.args[0]
+			result['data'] = str(e)
 
 		return result
 
 
-	def __run_request(self, data):
+	def __run_request(self, req):
 		result = ''
-		op = data['operation']
-		print("OP: " + op)
+		op = req.get('operation', None)
+		data = req.get('data', None)
 		if op == "create":
 			result = self.__api.create_tournament(
 				name = data['name'],

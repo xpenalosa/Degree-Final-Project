@@ -1,0 +1,20 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+
+{% block title %}Error{% endblock %}
+
+
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/error.css' %}">
+{% endblock %}
+
+
+{% block js %}
+{% endblock %}
+
+
+{% block content %}
+  <h1>S'ha trobat un error</h1>
+  <p>Codi {{ code }}<br>Informaci&oacute;:<br>{{ data }}</p>
+{% endblock %}

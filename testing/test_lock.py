@@ -1,5 +1,5 @@
 from kazoo.recipe.lock import Lock, ReadLock, WriteLock
-from kazoo.exceptions import LockTimeout
+from kazoo.exceptions import LockTimeout, NoNodeError
 
 from basetest import BaseTest
 
@@ -20,6 +20,32 @@ class LockTest(BaseTest):
 		assert data == b"Info", "Data mismatch for client_1"
 		data, stats = self.client_2.get(path)
 		assert data == b"Info", "Data mismatch for client_2"
+
+
+	@BaseTest.make_test
+	def test_lock_delete(self):
+		self.client_1.ensure_path(self.testpath)
+		path = self.client_1.create(
+			self.testpath + "/lock_delete", b"Info")
+		lock = self.client_1.Lock(path, "client_1")
+		lock_1_acquired = False
+		with lock:
+			print("Lock acquired")
+			lock_1_acquired = True
+			try:	
+				self.client_1.delete(path, recursive=True)
+				
+			except Exception as e:
+				print(type(e))
+				raise Exception(e)
+			else:
+				try:
+					data, stats = self.client_1.get(path)
+				except NoNodeError:
+					pass
+				else:
+					raise Exception("Did not delete node")
+		assert lock_1_acquired == True, "Did not acquire lock"
 
 
 	@BaseTest.make_test

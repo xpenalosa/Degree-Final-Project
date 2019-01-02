@@ -18,7 +18,12 @@ class ApiListenerTest(BaseTest):
 		self.pipe_address = ("localhost", 6000)
 		# Set testing path
 		client = self.__create_api_client()
-		client.send({'operation':'setpath','path':self.testpath})
+		client.send({
+			'operation':'setpath',
+			'data' : {
+				'path':self.testpath
+			}
+		})
 		client.recv()
 		client.close()
 
@@ -43,10 +48,12 @@ class ApiListenerTest(BaseTest):
 
 		sent_data = dict()
 		sent_data['operation'] = "create"
-		sent_data['name'] = "Test tournament listener"
-		sent_data['modality'] = 0
-		sent_data['password'] = "test"
-		sent_data['players'] = [str(n) for n in range(num_children)]
+		data = dict()
+		data['name'] = "Test tournament listener"
+		data['modality'] = 0
+		data['password'] = "test"
+		data['players'] = [str(n) for n in range(num_children)]
+		sent_data['data'] = data
 
 		api_client = self.__create_api_client()
 		api_client.send(sent_data)
@@ -68,15 +75,15 @@ class ApiListenerTest(BaseTest):
 			"Data is not a path", t_path])
 
 		# Verify the tournament exists
-		data, stats = self.client.get(t_path)
+		data_out, stats = self.client.get(t_path)
 
-		assert data is not None, "Node data is None"
-		data_json = json.loads(data.decode())
-		j_name = data_json['name']
-		assert j_name == sent_data['name'], "Name " + j_name
-		j_mod = data_json['modality']
-		assert j_mod == sent_data['modality'], "Modality " + j_mod
-		j_classif = data_json['classification']
+		assert data_out is not None, "Node data_out is None"
+		data_out_json = json.loads(data_out.decode())
+		j_name = data_out_json.get('name', None)
+		assert j_name == data['name'], "Name " + j_name
+		j_mod = data_out_json.get('modality', None)
+		assert j_mod == data['modality'], "Modality " + j_mod
+		j_classif = data_out_json.get('classification', None)
 		assert len(j_classif) == num_children - 1, ' '.join([
 			"Number of players:", str(len(j_classif))])
 		assert j_classif == "UUUU", "Classification " + j_classif
@@ -96,22 +103,22 @@ class ApiListenerTest(BaseTest):
 			assert p_data is not None
 			p_data_json = json.loads(p_data.decode())
 			# name, points, disqualified, wins, losses
-			p_name = p_data_json['name']
-			assert p_name == sent_data['players'][index], ' '.join(
+			p_name = p_data_json.get('name', None)
+			assert p_name == data['players'][index], ' '.join(
 				["Player", str(index), "name", p_name])
-			p_points = p_data_json['points']
+			p_points = p_data_json.get('points', None)
 			assert p_points == 0, ' '.join([
 				"Player", str(index), "points",
 				str(p_points)])
-			p_disq = p_data_json['disqualified']
+			p_disq = p_data_json.get('disqualified', None)
 			assert p_disq == False, ' '.join([
 				"Player", str(index), "disqualified",
 				str(p_disq)])
-			p_wins = p_data_json['wins']
+			p_wins = p_data_json.get('wins', None)
 			assert p_wins == 0, ' '.join([
 				"Player", str(index), "wins",
 				str(p_wins)])
-			p_losses = p_data_json['losses']
+			p_losses = p_data_json.get('losses', None)
 			assert p_losses == 0, ' '.join([
 				"Player", str(index), "losses",
 				str(p_losses)])
@@ -131,10 +138,12 @@ class ApiListenerTest(BaseTest):
 
 		sent_data = dict()
 		sent_data['operation'] = "create"
-		sent_data['name'] = "Test tournament listener 2"
-		sent_data['modality'] = 0
-		sent_data['password'] = "test"
-		sent_data['players'] = [str(n) for n in range(num_children)]
+		data = dict()
+		data['name'] = "Test tournament listener 2"
+		data['modality'] = 0
+		data['password'] = "test"
+		data['players'] = [str(n) for n in range(num_children)]
+		sent_data['data'] = data
 
 		api_client = self.__create_api_client()
 		api_client.send(sent_data)
@@ -148,7 +157,7 @@ class ApiListenerTest(BaseTest):
 
 		sent_data2 = dict()
 		sent_data2['operation'] = "get"
-		sent_data2['id'] = t_path.split('/')[-1].lstrip('t')
+		sent_data2['data'] = {'id' : t_path.split('/')[-1].lstrip('t')}
 
 		api_client2 = self.__create_api_client()
 		api_client2.send(sent_data2)
@@ -166,7 +175,7 @@ class ApiListenerTest(BaseTest):
 
 		o_name = t_info['name']
 		assert o_name is not None, "Tournament name is None"
-		assert o_name == sent_data['name'], " ".join([
+		assert o_name == data['name'], " ".join([
 			"Wrong tournament name", o_name])
 		
 		o_classif = t_info['classification']
@@ -176,7 +185,7 @@ class ApiListenerTest(BaseTest):
 			"Classification value", o_classif])
 		
 		o_mod = t_info['modality']
-		assert o_mod == sent_data['modality'], " ".join([
+		assert o_mod == data['modality'], " ".join([
 			"Wrong modality", str(o_mod)])
 
 		o_version = t_info['version']
@@ -228,10 +237,12 @@ class ApiListenerTest(BaseTest):
 
 		sent_data = dict()
 		sent_data['operation'] = "create"
-		sent_data['name'] = "Test tournament listener 3"
-		sent_data['modality'] = 0
-		sent_data['password'] = "test"
-		sent_data['players'] = [str(n) for n in range(num_children)]
+		data = dict()
+		data['name'] = "Test tournament listener 3"
+		data['modality'] = 0
+		data['password'] = "test"
+		data['players'] = [str(n) for n in range(num_children)]
+		sent_data['data'] = data
 
 		api_client = self.__create_api_client()
 		api_client.send(sent_data)
@@ -248,8 +259,10 @@ class ApiListenerTest(BaseTest):
 
 		sent_data3 = dict()
 		sent_data3['operation'] = "delete"
-		sent_data3['id'] = t_id
-		sent_data3['password'] = sent_data['password']
+		data3 = dict()
+		data3['id'] = t_id
+		data3['password'] = data['password']
+		sent_data3['data'] = data3
 
 		api_client3 = self.__create_api_client()
 		api_client3.send(sent_data3)
@@ -289,10 +302,12 @@ class ApiListenerTest(BaseTest):
 
 		sent_data = dict()
 		sent_data['operation'] = "create"
-		sent_data['name'] = "Test tournament listener 3"
-		sent_data['modality'] = 0
-		sent_data['password'] = "test"
-		sent_data['players'] = [str(n) for n in range(num_children)]
+		data = dict()
+		data['name'] = "Test tournament listener 4"
+		data['modality'] = 0
+		data['password'] = "test"
+		data['players'] = [str(n) for n in range(num_children)]
+		sent_data['data'] = data
 
 		api_client = self.__create_api_client()
 		api_client.send(sent_data)
@@ -310,7 +325,7 @@ class ApiListenerTest(BaseTest):
 
 		sent_data2 = dict()
 		sent_data2['operation'] = "get"
-		sent_data2['id'] = t_id
+		sent_data2['data'] = {'id' : t_id}
 
 		api_client2 = self.__create_api_client()
 		api_client2.send(sent_data2)
@@ -328,10 +343,12 @@ class ApiListenerTest(BaseTest):
 
 		sent_data3 = dict()
 		sent_data3['operation'] = "update"
-		sent_data3['id'] = t_id
-		sent_data3['version'] = t_info['version']
-		sent_data3['classification'] = new_classif
-		sent_data3['password'] = sent_data['password']
+		data3 = dict()
+		data3['id'] = t_id
+		data3['version'] = t_info['version']
+		data3['classification'] = new_classif
+		data3['password'] = data['password']
+		sent_data3['data'] = data3
 
 		api_client3 = self.__create_api_client()
 		api_client3.send(sent_data3)
@@ -367,10 +384,12 @@ class ApiListenerTest(BaseTest):
 
 		sent_data = dict()
 		sent_data['operation'] = "create"
-		sent_data['name'] = "Test tournament listener 4"
-		sent_data['modality'] = 0
-		sent_data['password'] = "test"
-		sent_data['players'] = [str(n) for n in range(num_children)]
+		data = dict()
+		data['name'] = "Test tournament listener 5"
+		data['modality'] = 0
+		data['password'] = "test"
+		data['players'] = [str(n) for n in range(num_children)]
+		sent_data['data'] = data
 
 		api_client = self.__create_api_client()
 		api_client.send(sent_data)
@@ -383,7 +402,7 @@ class ApiListenerTest(BaseTest):
 		assert answer is not None, "Returned answer is None."
 		assert type(answer) is dict, "Returned answer is not a dict."
 		t_path = answer['data']
-		t_id = t_path.split('/')[-1].lstrip('t')
+		t_id = str(int(t_path.split('/')[-1].lstrip('t')))
 
 		# ---------- GET LIST ----------
 
@@ -397,7 +416,7 @@ class ApiListenerTest(BaseTest):
 
 		answer2 = api_client2.recv()
 		api_client2.close()
-
+	
 		assert answer2 is not None, "Returned answer2 is None."
 		assert type(answer2) is dict, "Returned answer2 is not a dict."
 		assert answer2['code'] == 0, "Code2 mismatch: " + str(answer2)
@@ -417,7 +436,7 @@ class ApiListenerTest(BaseTest):
 				"Name is None:", str(t_info)])
 
 			# Check against original name
-			if t_name != sent_data['name']:
+			if t_name != data['name']:
 				continue
 
 			# Check player count

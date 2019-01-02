@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>
+      {% block title %}{% endblock %}
+    </title>
+
+    <link href="{% static "css/general.css" %}" rel=stylesheet>
+    {% block css %}{% endblock css %}
+
+    {% block js %}{% endblock js %}
+  </head>
+
+  <body>
+    {% include "navbar.html" %}
+    {% block content %}{% endblock %}
+    {% include "footer.html"%}
+  </body>
+
+</html>

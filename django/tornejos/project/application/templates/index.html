@@ -7,20 +7,49 @@
   </head>
   <body>
     <div id="content">
-      <div class="row">
-        <div class="column left">
-          <h1 class="header">Visita l'API</h1>
-          <a href="/api/" class="button">API</a>
-        </div>
-        <div class="column middle">
-          <h1 class="header">Gestiona tornejos</h1>
-          <a href="/" class="button">Accedeix</a>
-        </div>
-        <div class="column right">
-          <h1 class="header">Accedeix al blog</h1>
-          <a href="/blog/" class="button">Blog</a>
-        </div>
+
+      <div class="title">
+        <h1>Gestor de tornejos</h1>
+        <p>
+          <strong>Treball de Fi de Grau</strong><br>
+          <strong>Xavier Pe&ntilde;alosa i Esteller</strong><br>
+          <strong>"Sistema distribu&iuml;t de gesti&oacute; de tornejos via web"</strong><br><br><br>
+          <small>
+            <b>Facultat d'Inform&agrave;tica de Barcelona</b> |
+            Universitat Polit&egrave;cnica de Catalunya |
+            <b>Tardor 2018</b>
+          </small>
+        </p>
       </div>
+
+      <div class="row odd">
+        <h1 class="create">Crea un torneig</h1>
+        <p>
+          Crea i edita un torneig de fins a 16 jugadors. No cal registrar-se i &eacute;s completament
+          gratu&iuml;t! Per evitar que altra gent modifiqui el torneig sense el consentiment del creador,
+          es requereix una contrassenya.
+        </p>
+        <button onclick="location.href='/create'" type="button">Crear</button>
+      </div>
+
+      <div class="row even">
+        <h1 class="list">Llista els tornejos</h1>
+        <p>
+          Visualitza els tornejos creats, analitza les opcions de cada participant o edita els teus
+          propis tornejos.
+        </p>
+        <button onclick="location.href='/list'" type="button">Llistar</button>
+      </div>
+
+      <div class="row odd">
+        <h1 class="blog">Accedeix al blog</h1>
+        <p>
+          Fes un cop d'ull al blog de desenvolupament del projecte. Hi trobar&agrave;s els passos
+          seguits per el desenvolupador i les hores que hi ha dedicat.
+        </p>
+        <button onclick="location.href='/blog/'" type="button">Blog</button>
+      </div>
+
     </div>
   </body>
 </html>

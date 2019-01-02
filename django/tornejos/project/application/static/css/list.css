@@ -1,0 +1,108 @@
+#header {
+	margin-bottom: 75px;
+}
+
+#header h1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 34px;
+	min-width: 20%;
+	max-width: 50%;
+	float: left;
+	margin: 0;
+}
+
+#header input[type=text] {
+	margin-top: 10px;
+	float: right;
+	min-width: 20%;
+	max-width: 40%;
+	width: 400px;
+	font-size: 26px;
+}
+
+#list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-right: 30px;
+}
+
+#tournament {
+	color: lightgray;
+	overflow: auto;
+	background-color: #7b7b7b;
+	width: 100%;
+	border-radius: 4px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	transition: 0.2s;
+}
+
+#tournament:hover{
+	background-color: #3b3b3b;
+}
+
+#main-info {
+	min-height: 30px;
+	height: 70%;
+}
+
+#main-info p.name {
+	margin: 0;
+	font-size: 24px;
+	float: left;
+	width: 60%;
+}
+
+#tournament p.players {
+	width: 30%;
+	font-size: 16px;
+	margin: 0px;
+}
+
+#main-info button {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 15%;
+	height: 80%;
+	float: right;
+
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	color: lightgray;
+
+	border: 2px solid lightgray;
+	border-radius: 4px;
+	background-color: inherit;
+}
+
+p.info {
+	text-align: center;
+	font-family: Arial Black, Helvetica, sans-serif;
+	color: #3b3b3b;
+}
+
+#messages {
+	background-color: #017000;
+	text-align: center;
+
+	color: lightgray;
+	font-family: Arial Black, Helvetica, sans-serif;
+	font-style: bold;
+
+	list-style: none;
+	padding: 10px;
+	box-shadow: 0px 10px 20px -5px;
+}
+
+li.message#error {
+
+}

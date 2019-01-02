@@ -1,0 +1,117 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+{% block title %} {{ data.name }} {% endblock title %}
+
+
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/display.css' %}">
+{% endblock css %}
+
+
+{% block js %}
+{% endblock js %}
+
+
+{% block content %}
+
+
+  <div id='content' onload="update-slots()">
+    {% with data.players|length as plen %}
+    <div id='main_info'>
+      <h1 id='name'>{{ data.name }}</h1>
+
+      <p id='player_count'>{{ plen }} participants</p>
+    </div>
+    <div id='management'>
+      <form onsubmit="return check_form()" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+          {{ field }}
+        {% endfor %}
+        <input type="submit" name="update" value="Actualitza" formaction="update">
+        <input type="submit" name="delete" value="Esborra" formaction="delete">
+      </form>
+    </div>
+
+    <table id='canvas'>
+
+      <tr id='row 1'>
+        <td class='player' id='0'>
+          <p id='name'></p>
+          <p id='stats'>0W 0L</p>
+        </td>
+      </tr>
+
+
+
+      {% if plen > 2 %}
+        <tr id='spacer'></tr>
+        <tr id='row 2'>
+          {# Django template does not support range iterations #}
+          {% for _ in 'xx' %}
+            <td class='player' id='{{ forloop.counter0 }}' onmouseclick="update_classification(this);">
+              <p id='name'></p>
+              <p id='stats'>0W 0L</p>
+            </td>
+          {% endfor %}
+        </tr>
+      {% endif %}
+
+      {% if plen > 4 %}
+        <tr id='spacer'></tr>
+        <tr id='row 3'>
+          {# Django template does not support range iterations #}
+          {% for _ in 'xxxx' %}
+            {% if forloop.counter0|divisibleby:2 and forloop.counter0 != 0 %}
+              <td class='spacer'></td>
+            {% endif %}
+            <td class='player' id='{{ forloop.counter0 }}'>
+              <p id='name'></p>
+              <p id='stats'>0W 0L</p>
+            </td>
+          {% endfor %}
+        </tr>
+      {% endif %}
+
+      {% if plen > 8 %}
+        <tr id='spacer'></tr>
+        <tr id='row 4'>
+          {# Django template does not support range iterations #}
+          {% for _ in 'xxxxxxxx' %}
+            {% if forloop.counter0|divisibleby:2 and forloop.counter0 != 0 %}
+              <td class='spacer'></td>
+            {% endif %}
+            <td class='player' id='{{ forloop.counter0 }}'>
+              <p id='name'></p>
+              <p id='stats'>0W 0L</p>
+            </td>
+          {% endfor %}
+        </tr>
+      {% endif %}
+
+      <tr id='spacer'></tr>
+      <tr id='row base'>
+        {% for player in data.players %}
+          {% if forloop.counter0|divisibleby:2 and forloop.counter0 != 0 %}
+              <td class='spacer'></td>
+          {% endif %}
+          <td class='player' id='{{ forloop.counter0 }}'>
+            <p id='name'>{{ player.name }}</p>
+            <p id='stats'>{{ player.wins }}W {{player.losses}}L</p>
+          </td>
+        {% endfor %}
+      </tr>
+
+    </table>
+    {% endwith %}
+  
+  {% if messages %}
+    <ul id='messages'>
+    {% for message in messages %}
+      <li class="{{ message.tags|title }}">{{ message|title }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+  </div>
+{% endblock content %}
