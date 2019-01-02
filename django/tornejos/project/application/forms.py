@@ -28,7 +28,6 @@ class CreateTournamentForm(forms.Form):
 
 	def clean(self):
 		clean_data = super(CreateTournamentForm, self).clean()
-
 		n = clean_data.get('name')
 		if not re.match(r"^[\w\d\s]{1,32}$", n):
 			self._errors['name'] = self.error_class([
@@ -135,5 +134,4 @@ class UpdateTournamentForm(forms.Form):
 							invàlida"])
 					del self.cleaned_data['classification']
 					break
-
 		return clean_data

@@ -204,5 +204,3 @@ def delete_tournament(request, identifier):
 			messages.add_message(request, messages.ERROR,
 				"Formulari invàlid")
 	return redirect("/t/{}/".format(identifier))
-
-
