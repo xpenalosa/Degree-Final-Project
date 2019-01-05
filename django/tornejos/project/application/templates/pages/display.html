@@ -10,13 +10,14 @@
 
 
 {% block js %}
+  <script src="{% static "js/display.js"%}"></script>
 {% endblock js %}
 
 
 {% block content %}
 
 
-  <div id='content' onload="update-slots()">
+  <div id='content'">
     {% with data.players|length as plen %}
     <div id='main_info'>
       <h1 id='name'>{{ data.name }}</h1>
@@ -36,7 +37,7 @@
 
     <table id='canvas'>
 
-      <tr id='row 1'>
+      <tr id='row 0'>
         <td class='player' id='0'>
           <p id='name'></p>
           <p id='stats'>0W 0L</p>
@@ -47,10 +48,10 @@
 
       {% if plen > 2 %}
         <tr id='spacer'></tr>
-        <tr id='row 2'>
+        <tr id='row 1'>
           {# Django template does not support range iterations #}
           {% for _ in 'xx' %}
-            <td class='player' id='{{ forloop.counter0 }}' onmouseclick="update_classification(this);">
+            <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
               <p id='name'></p>
               <p id='stats'>0W 0L</p>
             </td>
@@ -60,13 +61,13 @@
 
       {% if plen > 4 %}
         <tr id='spacer'></tr>
-        <tr id='row 3'>
+        <tr id='row 2'>
           {# Django template does not support range iterations #}
           {% for _ in 'xxxx' %}
             {% if forloop.counter0|divisibleby:2 and forloop.counter0 != 0 %}
               <td class='spacer'></td>
             {% endif %}
-            <td class='player' id='{{ forloop.counter0 }}'>
+            <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
               <p id='name'></p>
               <p id='stats'>0W 0L</p>
             </td>
@@ -76,13 +77,13 @@
 
       {% if plen > 8 %}
         <tr id='spacer'></tr>
-        <tr id='row 4'>
+        <tr id='row 3'>
           {# Django template does not support range iterations #}
           {% for _ in 'xxxxxxxx' %}
             {% if forloop.counter0|divisibleby:2 and forloop.counter0 != 0 %}
               <td class='spacer'></td>
             {% endif %}
-            <td class='player' id='{{ forloop.counter0 }}'>
+            <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
               <p id='name'></p>
               <p id='stats'>0W 0L</p>
             </td>
@@ -96,7 +97,7 @@
           {% if forloop.counter0|divisibleby:2 and forloop.counter0 != 0 %}
               <td class='spacer'></td>
           {% endif %}
-          <td class='player' id='{{ forloop.counter0 }}'>
+          <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
             <p id='name'>{{ player.name }}</p>
             <p id='stats'>{{ player.wins }}W {{player.losses}}L</p>
           </td>
