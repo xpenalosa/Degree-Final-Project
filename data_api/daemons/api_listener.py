@@ -116,8 +116,8 @@ class DataApiListener():
 			result = self.__api.get_tournament_list()
 		elif op == "status":
 			result = {
-				'status' : self.client.state,
-				'address' : self.client.hosts
+				'status' : self.kz_client.state,
+				'address' : self.kz_client.hosts
 			}
 		elif op == "setpath":
 			new_path = data['path']

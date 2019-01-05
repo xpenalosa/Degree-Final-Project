@@ -13,8 +13,7 @@ import math
 
 from .forms import CreateTournamentForm, UpdateTournamentForm
 
-def __get_port(tried_ports):
-	"""Get a listening port from the available list. """
+def __get_listed_ports():
 	listed_ports = cache.get('ports')
 
 	if not listed_ports:
@@ -25,13 +24,19 @@ def __get_port(tried_ports):
 
 			start_port = int(lines[0].rstrip("\n"))
 
-			zookeeper_clients = lines[1]
+			zookeeper_clients = lines[1].rstrip('\n')
+			cache.set('zoo_clients', zookeeper_clients, None)
 			client_count = len(zookeeper_clients.split(","))
 			client_ports = range(start_port,start_port+client_count)
 
 		listed_ports = ",".join([str(n) for n in list(client_ports)])
 		cache.set('ports', listed_ports, None)
-		
+	return listed_ports	
+
+
+def __get_port(tried_ports):
+	"""Get a listening port from the available list. """
+	listed_ports = __get_listed_ports()
 	# Filter tried ports
 	available_ports = []
 	for port in listed_ports.split(","):
@@ -110,7 +115,9 @@ def create_tournament(request):
 			context['error'] = "Code {}, data {}".format(
 				answer['code'], answer['data'])
 	else:
-		form = CreateTournamentForm()
+		form = CreateTournamentForm(initial={
+			
+		})
 
 
 	context['form'] = form
@@ -204,3 +211,63 @@ def delete_tournament(request, identifier):
 			messages.add_message(request, messages.ERROR,
 				"Formulari invàlid")
 	return redirect("/t/{}/".format(identifier))
+
+
+def status(request):
+	listed_ports = __get_listed_ports()
+	zoo_clients = cache.get('zoo_clients')
+	context = {'data' : []}
+	for port, host in zip(listed_ports.split(","), zoo_clients.split(",")):
+		host = host.split(":")[0]
+		address = ("localhost", int(port))
+		data = {
+			'operation' : 'status'
+		}
+		answer = ''
+		try:
+			client = Client(address)
+			client.send(data)
+			# Wait 0.75s for a response, or change server
+			if client.poll(0.75):
+				answer = client.recv()
+			client.close()
+		except ConnectionRefusedError:
+			# Client not available, try next
+			context['data'].append({
+				'port' : port,
+				'code' : -1,
+				'status' : 'Unreachable listener',
+				'host' : host
+			})
+		else:
+			if answer:
+				result_data = answer['data']
+				status = ''
+				hosts = ''
+				if type(result_data) is dict:
+					status = result_data['status']
+					hosts = result_data['address']
+				else:
+					status = result_data
+
+				if hosts:
+					hosts = ", ".join([h[0] for h in hosts])
+				else:
+					hosts = host
+
+				context['data'].append({
+					'port' : port,
+					'code' : answer['code'],
+					'status' : status,
+					'host' : hosts
+				})
+			else:
+				context['data'].append({
+					'port' : port,
+					'code' : -2,
+					'status' : 'No data returned',
+					'host' : host
+				})
+				
+	return render(request, "pages/status.html", context)
+

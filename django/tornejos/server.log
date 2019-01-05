@@ -1,200 +1,1057 @@
 nohup: ignoring input
-[04/Jan/2019 11:45:03] "GET / HTTP/1.1" 200 1838
-[04/Jan/2019 11:45:04] "GET /test HTTP/1.1" 200 1523
+[05/Jan/2019 12:25:19] "GET /blog/ HTTP/1.1" 200 3857
 Not Found: /favicon.ico
-[04/Jan/2019 11:45:04] "GET /favicon.ico HTTP/1.1" 404 3047
-[04/Jan/2019 11:45:06] "GET /blog/ HTTP/1.1" 200 3857
-[04/Jan/2019 11:48:02] "GET /blog/ HTTP/1.1" 200 3857
+[05/Jan/2019 12:25:19] "GET /favicon.ico HTTP/1.1" 404 3047
+[05/Jan/2019 12:25:20] "GET / HTTP/1.1" 200 1838
+[05/Jan/2019 12:25:25] "GET /list HTTP/1.1" 200 1067
+[05/Jan/2019 12:25:25] "GET /static/css/error.css HTTP/1.1" 200 164
+[05/Jan/2019 12:25:25] "GET /static/css/general.css HTTP/1.1" 304 0
+[05/Jan/2019 12:25:37] "GET /create HTTP/1.1" 200 2135
+[05/Jan/2019 12:25:38] "GET /static/css/create.css HTTP/1.1" 304 0
+[05/Jan/2019 12:26:29] "GET /list HTTP/1.1" 200 1067
+[05/Jan/2019 12:26:34] "GET /list HTTP/1.1" 200 1067
+[05/Jan/2019 12:26:34] "GET /static/css/error.css HTTP/1.1" 200 209
+[05/Jan/2019 12:26:34] "GET /static/css/general.css HTTP/1.1" 200 1652
 Not Found: /favicon.ico
-[04/Jan/2019 11:48:02] "GET /favicon.ico HTTP/1.1" 404 3047
-[04/Jan/2019 11:48:04] "GET / HTTP/1.1" 200 1838
-[04/Jan/2019 11:48:04] "GET /static/css/index.css HTTP/1.1" 304 0
-[04/Jan/2019 11:48:06] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 11:48:06] "GET /static/css/list.css HTTP/1.1" 200 1634
-[04/Jan/2019 11:48:06] "GET /static/js/list.js HTTP/1.1" 304 0
-[04/Jan/2019 11:48:06] "GET /static/css/general.css HTTP/1.1" 200 1652
-[04/Jan/2019 11:48:09] "GET /t/8/ HTTP/1.1" 200 4605
-[04/Jan/2019 11:48:09] "GET /static/css/display.css HTTP/1.1" 200 1133
-[04/Jan/2019 11:53:25] "GET /t/8/ HTTP/1.1" 200 5133
-[04/Jan/2019 11:55:23] "GET /t/8/ HTTP/1.1" 200 5181
-[04/Jan/2019 11:55:23] "GET /static/css/display.css HTTP/1.1" 200 1133
-[04/Jan/2019 11:55:23] "GET /static/js/display.js HTTP/1.1" 200 65
-[04/Jan/2019 11:55:23] "GET /static/css/general.css HTTP/1.1" 200 1652
+[05/Jan/2019 12:26:34] "GET /favicon.ico HTTP/1.1" 404 3047
+[05/Jan/2019 12:26:36] "GET /static/css/error.css HTTP/1.1" 304 0
+[05/Jan/2019 12:27:12] "GET /list HTTP/1.1" 200 1107
+[05/Jan/2019 12:27:12] "GET /static/css/error.css HTTP/1.1" 200 209
+[05/Jan/2019 12:27:12] "GET /static/css/general.css HTTP/1.1" 200 1652
 Not Found: /favicon.ico
-[04/Jan/2019 11:55:24] "GET /favicon.ico HTTP/1.1" 404 3047
-[04/Jan/2019 11:56:38] "GET /t/8/ HTTP/1.1" 200 5181
-[04/Jan/2019 11:56:39] "GET /static/js/display.js HTTP/1.1" 200 66
-[04/Jan/2019 11:59:10] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 11:59:11] "GET /static/js/display.js HTTP/1.1" 200 66
-[04/Jan/2019 12:00:14] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 12:00:14] "GET /static/js/display.js HTTP/1.1" 200 120
-[04/Jan/2019 12:08:15] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 12:08:15] "GET /static/js/display.js HTTP/1.1" 200 178
-[04/Jan/2019 13:05:22] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 13:05:22] "GET /static/js/display.js HTTP/1.1" 200 294
-[04/Jan/2019 13:05:51] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 13:05:51] "GET /static/js/display.js HTTP/1.1" 200 293
-[04/Jan/2019 13:06:00] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 13:06:00] "GET /static/js/display.js HTTP/1.1" 200 287
-[04/Jan/2019 13:06:12] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 13:06:13] "GET /static/js/display.js HTTP/1.1" 200 287
-[04/Jan/2019 13:06:20] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 13:06:21] "GET /static/js/display.js HTTP/1.1" 200 293
-[04/Jan/2019 14:10:26] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 14:10:26] "GET /static/js/display.js HTTP/1.1" 200 293
-[04/Jan/2019 14:32:15] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 14:32:15] "GET /static/js/display.js HTTP/1.1" 200 409
-[04/Jan/2019 15:19:30] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:19:30] "GET /static/js/display.js HTTP/1.1" 200 1159
-[04/Jan/2019 15:19:53] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:19:53] "GET /static/js/display.js HTTP/1.1" 200 1159
-[04/Jan/2019 15:23:13] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:23:13] "GET /static/js/display.js HTTP/1.1" 200 1175
-[04/Jan/2019 15:29:16] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:29:16] "GET /static/js/display.js HTTP/1.1" 304 0
-[04/Jan/2019 15:29:39] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:29:42] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:29:42] "GET /static/js/display.js HTTP/1.1" 200 1203
-[04/Jan/2019 15:29:42] "GET /static/css/display.css HTTP/1.1" 200 1133
-[04/Jan/2019 15:29:42] "GET /static/css/general.css HTTP/1.1" 200 1652
+[05/Jan/2019 12:27:13] "GET /favicon.ico HTTP/1.1" 404 3047
+[05/Jan/2019 12:27:27] "GET /list HTTP/1.1" 200 1107
+[05/Jan/2019 12:27:28] "GET /static/css/error.css HTTP/1.1" 200 72
+[05/Jan/2019 12:27:28] "GET /static/css/general.css HTTP/1.1" 200 1652
 Not Found: /favicon.ico
-[04/Jan/2019 15:29:42] "GET /favicon.ico HTTP/1.1" 404 3047
-[04/Jan/2019 15:38:12] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:38:12] "GET /static/js/display.js HTTP/1.1" 200 1224
-[04/Jan/2019 15:38:32] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:38:32] "GET /static/js/display.js HTTP/1.1" 200 1255
-[04/Jan/2019 15:45:25] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:45:25] "GET /static/js/display.js HTTP/1.1" 200 1308
-[04/Jan/2019 15:55:02] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 15:55:02] "GET /static/js/display.js HTTP/1.1" 200 966
-[04/Jan/2019 16:25:26] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 16:25:26] "GET /static/js/display.js HTTP/1.1" 200 1064
-[04/Jan/2019 17:57:29] "GET /blog/ HTTP/1.1" 200 3857
-[04/Jan/2019 17:57:31] "GET / HTTP/1.1" 200 1838
-[04/Jan/2019 17:57:33] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 17:57:33] "GET /static/css/list.css HTTP/1.1" 304 0
-[04/Jan/2019 17:57:35] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 17:57:35] "GET /static/js/display.js HTTP/1.1" 200 1064
-[04/Jan/2019 19:10:39] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 19:10:39] "GET /static/js/display.js HTTP/1.1" 200 2214
-[04/Jan/2019 19:11:17] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 19:11:17] "GET /static/js/display.js HTTP/1.1" 200 2215
-[04/Jan/2019 19:14:11] "GET /t/8/ HTTP/1.1" 200 5111
-[04/Jan/2019 19:14:11] "GET /static/js/display.js HTTP/1.1" 200 2222
-[04/Jan/2019 19:16:18] "POST /t/8/update HTTP/1.1" 302 0
-[04/Jan/2019 19:16:19] "GET /t/8/ HTTP/1.1" 200 5214
-[04/Jan/2019 19:16:19] "GET /static/js/display.js HTTP/1.1" 200 2222
-[04/Jan/2019 19:16:24] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 19:16:25] "GET /t/8/ HTTP/1.1" 200 5114
-[04/Jan/2019 19:16:26] "GET /static/js/display.js HTTP/1.1" 304 0
+[05/Jan/2019 12:27:28] "GET /favicon.ico HTTP/1.1" 404 3047
+[05/Jan/2019 12:28:16] "GET /list HTTP/1.1" 200 1107
+[05/Jan/2019 12:28:16] "GET /static/css/error.css HTTP/1.1" 200 138
+[05/Jan/2019 12:28:17] "GET /static/css/general.css HTTP/1.1" 200 1652
 Not Found: /favicon.ico
-[04/Jan/2019 19:16:41] "GET /favicon.ico HTTP/1.1" 404 3047
-[04/Jan/2019 19:17:42] "GET /t/8/ HTTP/1.1" 200 5114
-[04/Jan/2019 19:17:42] "GET /static/js/display.js HTTP/1.1" 200 2258
-[04/Jan/2019 19:17:48] "GET /t/8/ HTTP/1.1" 200 5114
-[04/Jan/2019 19:17:48] "GET /static/css/display.css HTTP/1.1" 200 1133
-[04/Jan/2019 19:17:48] "GET /static/js/display.js HTTP/1.1" 200 2258
-[04/Jan/2019 19:17:48] "GET /static/css/general.css HTTP/1.1" 200 1652
+[05/Jan/2019 12:28:17] "GET /favicon.ico HTTP/1.1" 404 3047
+[05/Jan/2019 12:28:28] "GET /list HTTP/1.1" 200 1107
+[05/Jan/2019 12:28:28] "GET /static/css/error.css HTTP/1.1" 200 153
+[05/Jan/2019 12:28:33] "GET /list HTTP/1.1" 200 1107
+[05/Jan/2019 12:28:34] "GET /static/css/error.css HTTP/1.1" 200 153
+[05/Jan/2019 12:28:34] "GET /static/css/general.css HTTP/1.1" 200 1652
 Not Found: /favicon.ico
-[04/Jan/2019 19:17:48] "GET /favicon.ico HTTP/1.1" 404 3047
-[04/Jan/2019 19:18:26] "GET /t/8/ HTTP/1.1" 200 5114
-[04/Jan/2019 19:18:26] "GET /static/css/display.css HTTP/1.1" 200 1133
-[04/Jan/2019 19:18:26] "GET /static/js/display.js HTTP/1.1" 200 2292
-[04/Jan/2019 19:18:26] "GET /static/css/general.css HTTP/1.1" 200 1652
+[05/Jan/2019 12:28:34] "GET /favicon.ico HTTP/1.1" 404 3047
+[05/Jan/2019 12:28:48] "GET /list HTTP/1.1" 200 1107
+[05/Jan/2019 12:28:48] "GET /static/css/error.css HTTP/1.1" 200 196
+[05/Jan/2019 12:29:23] "GET /list HTTP/1.1" 200 1107
+[05/Jan/2019 12:29:23] "GET /static/css/error.css HTTP/1.1" 200 216
+[05/Jan/2019 12:30:08] "GET /list HTTP/1.1" 200 1062
+[05/Jan/2019 12:30:08] "GET /static/css/error.css HTTP/1.1" 200 237
+[05/Jan/2019 12:30:08] "GET /static/css/general.css HTTP/1.1" 200 1652
 Not Found: /favicon.ico
-[04/Jan/2019 19:18:26] "GET /favicon.ico HTTP/1.1" 404 3047
-[04/Jan/2019 19:37:13] "POST /t/8/update HTTP/1.1" 302 0
-[04/Jan/2019 19:37:13] "GET /t/8/ HTTP/1.1" 200 5188
-[04/Jan/2019 19:37:14] "GET /static/js/display.js HTTP/1.1" 200 2292
-[04/Jan/2019 19:37:17] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 19:37:19] "GET /t/8/ HTTP/1.1" 200 5088
-[04/Jan/2019 19:41:29] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 19:41:31] "GET /t/8/ HTTP/1.1" 200 5088
-[04/Jan/2019 19:41:32] "GET /static/js/display.js HTTP/1.1" 304 0
-[04/Jan/2019 19:41:42] "POST /t/8/update HTTP/1.1" 302 0
-[04/Jan/2019 19:41:43] "GET /t/8/ HTTP/1.1" 200 5188
-[04/Jan/2019 19:41:44] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 19:41:46] "GET /t/8/ HTTP/1.1" 200 5088
-[04/Jan/2019 19:42:49] "GET / HTTP/1.1" 200 1838
-[04/Jan/2019 19:42:52] "GET /blog/ HTTP/1.1" 200 3857
-[04/Jan/2019 19:42:55] "GET /blog/admin HTTP/1.1" 302 0
-[04/Jan/2019 19:42:55] "GET /adminlogin/?next=/blog/admin HTTP/1.1" 200 1825
-[04/Jan/2019 19:42:56] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
-[04/Jan/2019 19:42:56] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17976
-[04/Jan/2019 19:42:56] "GET /static/admin/css/base.css HTTP/1.1" 200 16225
-[04/Jan/2019 19:42:56] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
-[04/Jan/2019 19:42:56] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
-[04/Jan/2019 19:42:56] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
-[04/Jan/2019 19:43:04] "POST /adminlogin/?next=/blog/admin HTTP/1.1" 302 0
-Forbidden (CSRF token missing or incorrect.): /adminlogin/
-[04/Jan/2019 19:52:34] "POST /adminlogin/?next=/blog/admin HTTP/1.1" 403 2513
-[04/Jan/2019 19:52:36] "GET /adminlogin/?next=/blog/admin HTTP/1.1" 302 0
-[04/Jan/2019 19:52:37] "GET /admin HTTP/1.1" 200 7693
-[04/Jan/2019 19:52:38] "GET / HTTP/1.1" 200 1838
-[04/Jan/2019 19:53:06] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 19:53:08] "GET / HTTP/1.1" 200 1838
-[04/Jan/2019 19:53:17] "GET /create HTTP/1.1" 200 2135
-[04/Jan/2019 19:53:17] "GET /static/js/create.js HTTP/1.1" 200 1422
-[04/Jan/2019 19:53:17] "GET /static/css/create.css HTTP/1.1" 200 835
-[04/Jan/2019 19:53:50] "POST /create HTTP/1.1" 302 0
-[04/Jan/2019 19:53:50] "GET /t/9/ HTTP/1.1" 200 3375
-[04/Jan/2019 19:53:50] "GET /static/js/display.js HTTP/1.1" 304 0
-[04/Jan/2019 19:54:43] "POST /t/9/update HTTP/1.1" 302 0
-[04/Jan/2019 19:54:44] "GET /t/9/ HTTP/1.1" 200 3475
-[04/Jan/2019 19:54:52] "GET /list HTTP/1.1" 200 1811
-[04/Jan/2019 19:55:02] "GET /t/9/ HTTP/1.1" 200 3375
-[04/Jan/2019 19:55:46] "POST /t/9/update HTTP/1.1" 302 0
-[04/Jan/2019 19:55:47] "GET /t/9/ HTTP/1.1" 200 3475
-[04/Jan/2019 19:55:49] "GET /list HTTP/1.1" 200 1811
-[04/Jan/2019 19:55:51] "GET /t/9/ HTTP/1.1" 200 3375
-[04/Jan/2019 19:56:15] "GET / HTTP/1.1" 200 1838
-[04/Jan/2019 19:56:22] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:56:22] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:56:32] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:56:32] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:56:33] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:56:33] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:56:34] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:56:34] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:56:35] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:56:35] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:56:36] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:56:36] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:57:32] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:57:32] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:57:33] "GET /list HTTP/1.1" 200 1012
-[04/Jan/2019 19:57:34] "GET /static/css/error.css HTTP/1.1" 404 1663
-[04/Jan/2019 19:57:35] "GET /create HTTP/1.1" 200 2135
-[04/Jan/2019 19:57:37] "GET /list HTTP/1.1" 200 1811
-[04/Jan/2019 19:58:03] "GET /t/9/ HTTP/1.1" 200 3375
-[04/Jan/2019 19:58:03] "GET /static/js/display.js HTTP/1.1" 304 0
-[04/Jan/2019 19:58:10] "POST /t/9/delete HTTP/1.1" 302 0
-[04/Jan/2019 19:58:10] "GET /list HTTP/1.1" 200 1665
-[04/Jan/2019 19:58:16] "GET /list HTTP/1.1" 200 1524
-[04/Jan/2019 19:58:18] "GET /t/8/ HTTP/1.1" 200 5088
-[04/Jan/2019 19:58:52] "GET /create HTTP/1.1" 200 2135
-[04/Jan/2019 19:59:05] "POST /create HTTP/1.1" 200 2252
-[04/Jan/2019 19:59:22] "POST /create HTTP/1.1" 302 0
-[04/Jan/2019 19:59:23] "GET /t/10/ HTTP/1.1" 200 2516
-[04/Jan/2019 19:59:28] "GET /create HTTP/1.1" 200 2135
-[04/Jan/2019 19:59:41] "POST /create HTTP/1.1" 302 0
-[04/Jan/2019 19:59:42] "GET /t/11/ HTTP/1.1" 200 8502
-[04/Jan/2019 20:21:45] "GET /t/11/ HTTP/1.1" 200 8502
-[04/Jan/2019 20:21:45] "GET /static/js/display.js HTTP/1.1" 200 2256
-[04/Jan/2019 20:30:08] "GET /t/11/ HTTP/1.1" 200 8502
-[04/Jan/2019 20:30:08] "GET /static/js/display.js HTTP/1.1" 200 2564
-[04/Jan/2019 20:30:45] "GET /t/11/ HTTP/1.1" 200 8502
-[04/Jan/2019 20:30:45] "GET /static/js/display.js HTTP/1.1" 200 2568
-[04/Jan/2019 20:31:04] "POST /t/11/update HTTP/1.1" 302 0
-[04/Jan/2019 20:31:05] "GET /t/11/ HTTP/1.1" 200 8602
-[04/Jan/2019 20:31:05] "GET /static/js/display.js HTTP/1.1" 304 0
-[04/Jan/2019 20:31:08] "GET /list HTTP/1.1" 200 2103
-[04/Jan/2019 20:31:12] "GET /t/11/ HTTP/1.1" 200 8502
-[04/Jan/2019 20:31:12] "GET /static/js/display.js HTTP/1.1" 304 0
-[04/Jan/2019 21:43:51] "POST /t/11/delete HTTP/1.1" 302 0
-[04/Jan/2019 21:43:51] "GET /list HTTP/1.1" 200 1960
-[04/Jan/2019 21:43:53] "GET /t/10/ HTTP/1.1" 200 2516
-[04/Jan/2019 21:43:54] "GET /static/js/display.js HTTP/1.1" 200 2259
-[04/Jan/2019 21:43:55] "POST /t/10/delete HTTP/1.1" 302 0
-[04/Jan/2019 21:43:56] "GET /list HTTP/1.1" 200 1665
-[04/Jan/2019 21:43:57] "GET /t/8/ HTTP/1.1" 200 5088
+[05/Jan/2019 12:30:08] "GET /favicon.ico HTTP/1.1" 404 3047
+[05/Jan/2019 12:38:37] "GET /list HTTP/1.1" 200 1067
+[05/Jan/2019 12:38:37] "GET /static/css/error.css HTTP/1.1" 304 0
+[2019-01-05 13:11:09,631 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=106 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb664f660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 12:24:53
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 13:13:42,502 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=329 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66b3660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:11:27
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 13:14:34,988 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=331 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb660b660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:14:00
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 13:14:51,040 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=214 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6601660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+[2019-01-05 13:15:40,353 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=174 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65e8660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:15:10
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 13:24:16,854 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=451 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66ad660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:16:00
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 13:27:03,466 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=271 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66a2660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:24:35
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5a65b28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 230
+    'status' : 'Unreachable listener'])
+                                     ^
+SyntaxError: invalid syntax
+[2019-01-05 13:27:33,512 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/urls.py' of this watch <Watch wd=203 path=/home/pi/tfg/django/tornejos/project/urls.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6611660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project'.
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5ac2b28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 230
+    'status' : 'Unreachable listener'])
+                                     ^
+SyntaxError: invalid syntax
+[2019-01-05 13:28:12,203 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/urls.py' of this watch <Watch wd=13 path=/home/pi/tfg/django/tornejos/project/urls.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb666e660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project'.
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5a30b28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 230
+    'status' : 'Unreachable listener'])
+                                     ^
+SyntaxError: invalid syntax
+[2019-01-05 13:28:40,720 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=1013 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65dc660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5ab1b28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 230
+    'status' : 'Unreachable listener'])
+                                     ^
+SyntaxError: invalid syntax
+[2019-01-05 13:31:22,530 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=1013 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb665d660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5ac5b28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 230
+    'status' : 'Unreachable listener'])
+                                     ^
+SyntaxError: invalid syntax
+[2019-01-05 13:32:07,514 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/urls.py' of this watch <Watch wd=203 path=/home/pi/tfg/django/tornejos/project/urls.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6671660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project'.
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5a6db28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 230
+    'status' : 'Unreachable listener'])
+                                     ^
+SyntaxError: invalid syntax
+[2019-01-05 13:32:29,246 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=1014 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6619660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+[05/Jan/2019 13:33:04] "GET /blog/ HTTP/1.1" 200 3857
+[05/Jan/2019 13:33:06] "GET / HTTP/1.1" 200 1838
+[05/Jan/2019 13:33:08] "GET /list HTTP/1.1" 200 1067
+[05/Jan/2019 13:33:08] "GET /static/css/error.css HTTP/1.1" 304 0
+[05/Jan/2019 13:33:12] "GET /status HTTP/1.1" 200 851
+[05/Jan/2019 13:34:28] "GET /status HTTP/1.1" 200 1331
+[05/Jan/2019 13:34:56] "GET /status HTTP/1.1" 200 1403
+[2019-01-05 13:38:11,516 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=213 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65e1660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:32:46
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 13:38:29] "GET /status HTTP/1.1" 200 1016
+[05/Jan/2019 13:38:29] "GET /status HTTP/1.1" 200 1016
+[05/Jan/2019 13:38:30] "GET /status HTTP/1.1" 200 1016
+[05/Jan/2019 13:38:30] "GET /status HTTP/1.1" 200 1016
+[05/Jan/2019 13:42:09] "GET /status HTTP/1.1" 200 1016
+[2019-01-05 13:42:51,376 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=395 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66b4660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:38:28
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 13:44:36,436 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=27 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65ee660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:43:10
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5ae3b28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 237
+    'status' : result_data['status'],
+           ^
+SyntaxError: invalid syntax
+[2019-01-05 13:50:13,750 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=1013 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb668f660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+[2019-01-05 13:53:12,749 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=176 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6698660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:50:31
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 13:53:50] "GET /status HTTP/1.1" 200 1016
+[05/Jan/2019 13:55:34] "GET /status HTTP/1.1" 200 1050
+[05/Jan/2019 13:55:54] "GET /status HTTP/1.1" 200 1063
+[05/Jan/2019 13:57:51] "GET /status HTTP/1.1" 200 1192
+[05/Jan/2019 13:59:28] "GET /status HTTP/1.1" 200 1233
+[05/Jan/2019 14:00:06] "GET /status HTTP/1.1" 200 1305
+[05/Jan/2019 14:00:06] "GET /static/css/status.css HTTP/1.1" 200 98
+[05/Jan/2019 14:00:21] "GET /status HTTP/1.1" 200 1305
+[05/Jan/2019 14:00:21] "GET /static/css/status.css HTTP/1.1" 200 119
+[05/Jan/2019 14:01:36] "GET /status HTTP/1.1" 200 1358
+[05/Jan/2019 14:01:36] "GET /static/css/status.css HTTP/1.1" 200 119
+[05/Jan/2019 14:02:06] "GET /status HTTP/1.1" 200 1358
+[05/Jan/2019 14:02:06] "GET /static/css/status.css HTTP/1.1" 200 131
+[05/Jan/2019 14:02:41] "GET /static/css/status.css HTTP/1.1" 304 0
+[05/Jan/2019 14:04:28] "GET /status HTTP/1.1" 200 1358
+[05/Jan/2019 14:04:28] "GET /static/css/status.css HTTP/1.1" 200 211
+[05/Jan/2019 14:04:45] "GET /status HTTP/1.1" 200 1358
+[05/Jan/2019 14:04:45] "GET /static/css/status.css HTTP/1.1" 200 234
+[05/Jan/2019 14:05:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[05/Jan/2019 14:05:41] "GET /status HTTP/1.1" 200 1358
+[05/Jan/2019 14:05:41] "GET /static/css/status.css HTTP/1.1" 200 267
+[05/Jan/2019 14:07:28] "GET /status HTTP/1.1" 200 1397
+[05/Jan/2019 14:07:28] "GET /static/css/status.css HTTP/1.1" 200 270
+[05/Jan/2019 14:08:56] "GET /status HTTP/1.1" 200 1397
+[05/Jan/2019 14:08:56] "GET /static/css/status.css HTTP/1.1" 200 306
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: '=>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 248, in status
+    return render(request, "pages/status.html", context)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 950, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 883, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/defaulttags.py", line 886, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=>' from '=>'
+[05/Jan/2019 14:17:51] "GET /status HTTP/1.1" 500 197663
+[05/Jan/2019 14:18:24] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:18:25] "GET /static/css/status.css HTTP/1.1" 200 417
+[05/Jan/2019 14:18:41] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:18:41] "GET /static/css/status.css HTTP/1.1" 200 381
+[05/Jan/2019 14:19:10] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:19:10] "GET /static/css/status.css HTTP/1.1" 200 381
+[05/Jan/2019 14:19:10] "GET /static/css/general.css HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+[05/Jan/2019 14:19:10] "GET /favicon.ico HTTP/1.1" 404 3168
+[05/Jan/2019 14:19:38] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:19:38] "GET /static/css/status.css HTTP/1.1" 200 345
+[05/Jan/2019 14:20:28] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:20:28] "GET /static/css/status.css HTTP/1.1" 200 389
+[05/Jan/2019 14:20:42] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:20:42] "GET /static/css/status.css HTTP/1.1" 200 389
+[05/Jan/2019 14:21:01] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:21:02] "GET /static/css/status.css HTTP/1.1" 200 414
+[05/Jan/2019 14:21:44] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:21:44] "GET /static/css/status.css HTTP/1.1" 200 415
+[05/Jan/2019 14:21:46] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:21:46] "GET /static/css/status.css HTTP/1.1" 200 415
+[05/Jan/2019 14:21:46] "GET /static/css/general.css HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+[05/Jan/2019 14:21:46] "GET /favicon.ico HTTP/1.1" 404 3168
+[05/Jan/2019 14:21:51] "GET /static/css/status.css HTTP/1.1" 304 0
+[05/Jan/2019 14:25:31] "GET /status HTTP/1.1" 200 1393
+[05/Jan/2019 14:25:31] "GET /static/css/status.css HTTP/1.1" 200 415
+[05/Jan/2019 14:25:34] "GET /static/css/status.css HTTP/1.1" 304 0
+[05/Jan/2019 14:26:19] "GET /status HTTP/1.1" 200 1396
+[05/Jan/2019 14:26:19] "GET /static/css/status.css HTTP/1.1" 200 415
+[2019-01-05 14:27:23,686 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=175 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6640660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 13:53:30
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 14:27:47,233 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=171 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6610660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:27:42
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 14:28:53,692 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=105 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb669f660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:28:05
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 14:29:16,462 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=214 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6649660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:29:12
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 14:29:39,390 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=451 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6635660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:29:34
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 14:30:08] "GET / HTTP/1.1" 200 1838
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 218, in status
+    for port, host in zip(listed_ports.split(","), zoo_clients.split(",")):
+AttributeError: 'NoneType' object has no attribute 'split'
+[05/Jan/2019 14:30:14] "GET /status HTTP/1.1" 500 66782
+[2019-01-05 14:31:02,547 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=270 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb668a660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:29:57
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 14:32:03] "GET /status HTTP/1.1" 200 1890
+[05/Jan/2019 14:32:04] "GET /static/css/status.css HTTP/1.1" 304 0
+[2019-01-05 14:32:36,201 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=398 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6614660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:31:19
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 14:32:54] "GET /status HTTP/1.1" 200 1875
+[05/Jan/2019 14:32:54] "GET /status HTTP/1.1" 200 1875
+[05/Jan/2019 14:32:54] "GET /static/css/status.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[05/Jan/2019 14:32:55] "GET /favicon.ico HTTP/1.1" 404 3168
+[2019-01-05 14:33:05,245 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=268 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65c2660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:32:53
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 224, in status
+    client.send(data)
+NameError: name 'data' is not defined
+[05/Jan/2019 14:39:53] "GET /status HTTP/1.1" 500 67711
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 224, in status
+    client.send(data)
+NameError: name 'data' is not defined
+[05/Jan/2019 14:39:57] "GET /status HTTP/1.1" 500 67711
+[2019-01-05 14:40:41,892 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=213 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65f9660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:33:22
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 245, in status
+    'status' : result_data['status'],
+KeyError: 'status'
+[05/Jan/2019 14:41:06] "GET /status HTTP/1.1" 500 67829
+[2019-01-05 14:41:58,697 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=107 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66a7660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:40:59
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 245, in status
+    'status' : result_data['data']['status'],
+TypeError: string indices must be integers
+[05/Jan/2019 14:42:27] "GET /status HTTP/1.1" 500 67937
+[2019-01-05 14:43:01,203 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=107 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6677660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:42:16
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 14:50:58,796 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=270 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65c2660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:43:19
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 245, in status
+    'status' : result_data['data']['status'],
+TypeError: string indices must be integers
+[05/Jan/2019 14:51:26] "GET /status HTTP/1.1" 500 67932
+[2019-01-05 14:52:00,939 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=271 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66aa660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:51:16
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 14:52:20,442 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=269 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66aa660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:52:20
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:52:38
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+{'code': -3, 'data': "Can't convert 'NoneType' object to str implicitly"}
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 247, in status
+    'status' : result_data['data']['status'],
+TypeError: string indices must be integers
+[05/Jan/2019 14:52:45] "GET /status HTTP/1.1" 500 67946
+[2019-01-05 14:54:14,327 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=451 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6625660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:54:32
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+{'code': -3, 'data': "'DataApiListener' object has no attribute 'client'"}
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 247, in status
+    'status' : result_data['data']['status'],
+TypeError: string indices must be integers
+[05/Jan/2019 14:54:37] "GET /status HTTP/1.1" 500 67951
+[2019-01-05 14:56:10,603 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=108 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb668f660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+[2019-01-05 14:56:29,826 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=174 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65d0660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:56:47
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+{'data': "'DataApiListener' object has no attribute 'client'", 'code': -3}
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 247, in status
+    'status' : result_data['data']['status'],
+TypeError: string indices must be integers
+[05/Jan/2019 14:56:51] "GET /status HTTP/1.1" 500 67993
+{'data': {'address': [('127.0.0.1', 2181)], 'status': 'CONNECTED'}, 'code': 0}
+{'data': {'address': [('192.168.1.15', 2181)], 'status': 'CONNECTED'}, 'code': 0}
+{'data': {'address': [('192.168.1.16', 2181)], 'status': 'CONNECTED'}, 'code': 0}
+[05/Jan/2019 14:57:54] "GET /status HTTP/1.1" 200 1902
+[05/Jan/2019 14:57:54] "GET /static/css/status.css HTTP/1.1" 304 0
+[2019-01-05 14:59:08,330 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=212 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6601660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+[2019-01-05 15:00:19,819 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=266 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65f2660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 14:59:25
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 242, in status
+    status = result_data['data']['status']
+TypeError: string indices must be integers
+[05/Jan/2019 15:01:36] "GET /status HTTP/1.1" 500 68652
+[2019-01-05 15:05:22,912 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=176 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6640660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:00:37
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 15:05:45] "GET /status HTTP/1.1" 200 1853
+[05/Jan/2019 15:05:45] "GET /static/css/status.css HTTP/1.1" 304 0
+[2019-01-05 15:07:01,501 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=330 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb66ab660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:05:40
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[2019-01-05 15:07:25,545 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=27 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6636660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:07:18
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 252, in status
+    'code' : result_data['code'],
+KeyError: 'code'
+[05/Jan/2019 15:08:37] "GET /status HTTP/1.1" 500 68407
+[2019-01-05 15:08:57,449 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=108 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6697660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:07:43
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 15:09:55] "GET /status HTTP/1.1" 200 1842
+[05/Jan/2019 15:09:55] "GET /static/css/status.css HTTP/1.1" 304 0
+[2019-01-05 15:10:04,358 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=269 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6602660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:09:16
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 243, in status
+    status = result_data.get('status', answer)
+AttributeError: 'str' object has no attribute 'get'
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 243, in status
+    status = result_data.get('status', answer)
+AttributeError: 'str' object has no attribute 'get'
+[05/Jan/2019 15:10:27] "GET /status HTTP/1.1" 500 68675
+[05/Jan/2019 15:10:27] "GET /status HTTP/1.1" 500 68675
+Internal Server Error: /status
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 243, in status
+    status = result_data.get('status', answer)
+AttributeError: 'str' object has no attribute 'get'
+[05/Jan/2019 15:10:27] "GET /status HTTP/1.1" 500 68676
+[2019-01-05 15:12:02,236 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=107 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65ef660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:10:22
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 15:12:20] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:12:20] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:12:21] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:13:02] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:13:04] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:13:05] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:13:05] "GET /static/css/status.css HTTP/1.1" 200 415
+[05/Jan/2019 15:13:05] "GET /static/css/general.css HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+[05/Jan/2019 15:13:05] "GET /favicon.ico HTTP/1.1" 404 3168
+[05/Jan/2019 15:13:21] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:13:22] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:13:22] "GET /status HTTP/1.1" 200 1851
+[05/Jan/2019 15:13:23] "GET /status HTTP/1.1" 200 1851
+Not Found: /favicon.ico
+[05/Jan/2019 15:14:08] "GET /favicon.ico HTTP/1.1" 404 3168
+[05/Jan/2019 15:14:38] "GET /status HTTP/1.1" 200 1842
+[05/Jan/2019 15:46:38] "GET /create HTTP/1.1" 200 2135
+[2019-01-05 15:48:19,841 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/views.py' of this watch <Watch wd=26 path=/home/pi/tfg/django/tornejos/project/application/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb662e660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:12:20
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 15:54:30] "GET /create HTTP/1.1" 200 2135
+[05/Jan/2019 16:00:34] "GET /create HTTP/1.1" 200 2135
+[2019-01-05 16:02:13,431 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1025 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65fe660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 15:48:38
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0xb5a38b28>
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.local/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/tfg/django/tornejos/project/urls.py", line 20, in <module>
+    from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+  File "/home/pi/tfg/django/tornejos/project/application/views.py", line 14, in <module>
+    from .forms import CreateTournamentForm, UpdateTournamentForm
+  File "/home/pi/tfg/django/tornejos/project/application/forms.py", line 29
+    'cols' : '72',
+         ^
+SyntaxError: invalid syntax
+[2019-01-05 16:04:17,776 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1016 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65e4660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+[05/Jan/2019 16:07:01] "GET / HTTP/1.1" 200 1838
+[05/Jan/2019 16:07:05] "GET /create HTTP/1.1" 200 2274
+[2019-01-05 16:07:40,273 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1020 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb666e660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 16:04:35
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 16:08:51] "GET /create HTTP/1.1" 200 2276
+[2019-01-05 16:08:59,939 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1060 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb6609660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 16:07:57
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 16:09:20] "GET /create HTTP/1.1" 200 2275
+[2019-01-05 16:31:19,698 pyinotify ERROR] The pathname '/home/pi/tfg/django/tornejos/project/application/forms.py' of this watch <Watch wd=1135 path=/home/pi/tfg/django/tornejos/project/application/forms.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function WatchManager.<lambda> at 0xb65ee660> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/tfg/django/tornejos/project/application'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2019 - 16:09:19
+Django version 2.1.3, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jan/2019 16:31:39] "GET /list HTTP/1.1" 200 1524
+[05/Jan/2019 16:31:40] "GET /static/css/list.css HTTP/1.1" 304 0
+[05/Jan/2019 16:31:42] "GET /t/8/ HTTP/1.1" 200 5088
+[05/Jan/2019 16:31:42] "GET /static/js/display.js HTTP/1.1" 304 0
+[05/Jan/2019 16:31:42] "GET /static/css/display.css HTTP/1.1" 304 0
+[05/Jan/2019 16:32:24] "GET /t/8/ HTTP/1.1" 200 5088

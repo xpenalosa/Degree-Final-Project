@@ -21,7 +21,12 @@ class CreateTournamentForm(forms.Form):
 	players = forms.CharField(
 		label="Noms dels participants",
 		widget=forms.Textarea({
-			'cols' : '72',
+			'placeholder' : " ".join([
+				"Entra els identificadors dels participants,",
+				"separats per comes o salts de línia.\nEs",
+				"poden afegir 2, 4, 8 o 16 participants."
+				]),
+			'cols' : '80',
 			'rows' : '8'
 		})
 	)

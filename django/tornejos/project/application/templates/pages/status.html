@@ -1,0 +1,36 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+
+{% block title %}Estat{% endblock %}
+
+
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/status.css' %}">
+{% endblock css %}
+
+
+{% block js %}
+{% endblock js %}
+
+
+{% block content %}
+  <div id='content'>
+    <table id='status_table'>
+      <tr>
+        <th class='host'>Servidor</th>
+        <th class='port'>Port</th>
+        <th class='access'>OK</th>
+        <th class='status'>Missatge</th>
+      </tr>
+      {% for connection in data %}
+          <tr class="connection">
+            <td class='host'>{{ connection.host }}</td>
+            <td class='port'>{{ connection.port }}</td>
+            <td class={% if connection.code >= 0 %}"pass"{% else %}"fail"{% endif %}></td>
+            <td class='status'>{{ connection.status }}</td>
+          </tr>
+      {% endfor %}
+    </table>
+  </div>
+{% endblock content%}

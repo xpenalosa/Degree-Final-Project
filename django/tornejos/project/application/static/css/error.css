@@ -1,0 +1,17 @@
+#content {
+	font-family: Arial Black, Helvetica, sans-serif;
+}
+
+#error {
+	background-color: #3b3b3b;
+	color: lightgray;
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+#error p {
+	padding: 0px;
+	margin: 0px;
+}

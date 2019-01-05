@@ -1,0 +1,41 @@
+table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	color: #3b3b3b;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td {
+	border: 2px solid #3b3b3b;
+}
+
+th {
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#port {
+	width: 10%;
+}
+
+#status {
+	width: 50%;
+}
+
+#host {
+	width: 30%;
+}
+
+#access, #pass, #fail {
+	width: 10%;
+}
+
+.pass {
+	background-color: green;
+}
+
+.fail {
+	background-color: red;
+}

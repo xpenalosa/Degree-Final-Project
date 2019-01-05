@@ -1,5 +1,7 @@
 # [TEMP FILES]
 *.out
+*.log
+scripts/out.txt
 
 # [COMPILED PYTHON]
 *.pyc
