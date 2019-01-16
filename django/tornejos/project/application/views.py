@@ -60,7 +60,7 @@ def __send_req_to_api(data):
 			client = Client(address)
 			client.send(data)
 			# Wait 0.75s for a response, or change server
-			if client.poll(0.75):
+			if client.poll(0.2):
 				result_data = client.recv()
 			client.close()
 		except ConnectionRefusedError:

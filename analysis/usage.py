@@ -1,6 +1,8 @@
 from __future__ import print_function
 
+import sys
 import logging
+
 from kazoo.client import KazooClient
 
 def print_node(client, nodename, depth):
@@ -13,13 +15,17 @@ def print_node(client, nodename, depth):
 		for cname in childrenNames:
 			print_node(client, nodename + "/" + cname, depth+1)
 
-def print_tree(client):
-	print("Displaying stored zNodes in tree structure")
+def print_tree(client, host):
+	print("Displaying stored zNodes in tree structure ({})".format(host))
 	print_node(client, '', 0)
 
 
 if __name__=='__main__':
-	zk = KazooClient(hosts='127.0.0.1:2181')
+	host = '127.0.0.1'
+	port = '2181'
+	if len(sys.argv) > 1:
+		host = sys.argv[1]
+	zk = KazooClient(hosts=':'.join([host, port]))
 	zk.start()
-	print_tree(zk)
+	print_tree(zk, host)
 	zk.stop()

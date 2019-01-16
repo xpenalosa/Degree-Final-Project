@@ -31,7 +31,12 @@ class ApiListenerTest(BaseTest):
 	def __del__(self):
 		# Send one last message to exit blocking call
 		client = self.__create_api_client()
-		client.send({'operation' : "dummy"})
+		client.send({
+			'operation' : "setpath",
+			'data' : {
+				'path':'/tornejos'
+			}
+		})
 		if client.poll(0.1):
 			client.recv()
 		client.close()
