@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, FileResponse, Http404
 from django.core.cache import cache
 from django.contrib import messages
 from django.contrib.messages import add_message
@@ -60,7 +60,7 @@ def __send_req_to_api(data):
 			client = Client(address)
 			client.send(data)
 			# Wait 0.75s for a response, or change server
-			if client.poll(0.2):
+			if client.poll(0.75):
 				result_data = client.recv()
 			client.close()
 		except ConnectionRefusedError:
@@ -68,7 +68,7 @@ def __send_req_to_api(data):
 			pass	
 		else:
 			if result_data:
-				code = result_data['code']		
+				code = result_data['code']
 				if code is not None and code != -1:
 					# Connection to zookeeper OK
 					return result_data
@@ -271,3 +271,12 @@ def status(request):
 				
 	return render(request, "pages/status.html", context)
 
+
+def pdf(request):
+	try:
+		return FileResponse(
+			open('/home/pi/tfg/pdf/tfg.pdf', 'rb'),
+			content_type='application/pdf'
+		)
+	except FileNotFoundError:
+		raise Http404()

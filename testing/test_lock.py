@@ -30,7 +30,6 @@ class LockTest(BaseTest):
 		lock = self.client_1.Lock(path, "client_1")
 		lock_1_acquired = False
 		with lock:
-			print("Lock acquired")
 			lock_1_acquired = True
 			try:	
 				self.client_1.delete(path, recursive=True)

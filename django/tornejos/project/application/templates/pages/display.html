@@ -40,7 +40,6 @@
       <tr id='row 0'>
         <td class='player' id='0'>
           <p id='name'></p>
-          <p id='stats'>0W 0L</p>
         </td>
       </tr>
 
@@ -53,7 +52,6 @@
           {% for _ in 'xx' %}
             <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
               <p id='name'></p>
-              <p id='stats'>0W 0L</p>
             </td>
           {% endfor %}
         </tr>
@@ -69,7 +67,6 @@
             {% endif %}
             <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
               <p id='name'></p>
-              <p id='stats'>0W 0L</p>
             </td>
           {% endfor %}
         </tr>
@@ -85,7 +82,6 @@
             {% endif %}
             <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
               <p id='name'></p>
-              <p id='stats'>0W 0L</p>
             </td>
           {% endfor %}
         </tr>
@@ -99,7 +95,6 @@
           {% endif %}
           <td class='player' id='{{ forloop.counter0 }}' onclick="update_classification(this);">
             <p id='name'>{{ player.name }}</p>
-            <p id='stats'>{{ player.wins }}W {{player.losses}}L</p>
           </td>
         {% endfor %}
       </tr>

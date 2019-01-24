@@ -17,7 +17,7 @@ from django.urls import path, re_path, include
 from django.contrib import admin
 from django.views.generic import TemplateView
 
-from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status
+from project.application.views import test, create_tournament, display_tournament, list_tournaments, update_tournament, delete_tournament, status, pdf
 
 urlpatterns = [
     re_path(r'^admin/?', admin.site.urls),
@@ -29,6 +29,7 @@ urlpatterns = [
     path(r'list', list_tournaments, name="list_tournaments"),
     path(r'create', create_tournament, name="create_tournament"),
     path(r'status', status, name="status"),
+    path(r'pdf', pdf, name="pdf"),
     path(r'', TemplateView.as_view(template_name='index.html'), name='Home'),
 ]
 
